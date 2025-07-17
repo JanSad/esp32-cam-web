@@ -1,0 +1,161 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- git rev-parse returned 'fatal: to nie jest repozytorium gita (ani żaden z katalogów nadrzędnych): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/esp32-camera (2.0.15)
+NOTICE: [2/2] idf (6.0.0)
+-- Project sdkconfig file /home/janek/esp/esp32-cam-web/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "esp32-cam-web" version: 1
+-- Adding linker script /home/janek/esp/esp32-cam-web/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/janek/esp/esp32-cam-web/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__esp32-camera esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/janek/esp/esp-idf/components/app_trace /home/janek/esp/esp-idf/components/app_update /home/janek/esp/esp-idf/components/bootloader /home/janek/esp/esp-idf/components/bootloader_support /home/janek/esp/esp-idf/components/bt /home/janek/esp/esp-idf/components/cmock /home/janek/esp/esp-idf/components/console /home/janek/esp/esp-idf/components/cxx /home/janek/esp/esp-idf/components/driver /home/janek/esp/esp-idf/components/efuse /home/janek/esp/esp-idf/components/esp-tls /home/janek/esp/esp-idf/components/esp_adc /home/janek/esp/esp-idf/components/esp_app_format /home/janek/esp/esp-idf/components/esp_bootloader_format /home/janek/esp/esp-idf/components/esp_coex /home/janek/esp/esp-idf/components/esp_common /home/janek/esp/esp-idf/components/esp_driver_ana_cmpr /home/janek/esp/esp-idf/components/esp_driver_bitscrambler /home/janek/esp/esp-idf/components/esp_driver_cam /home/janek/esp/esp-idf/components/esp_driver_dac /home/janek/esp/esp-idf/components/esp_driver_gpio /home/janek/esp/esp-idf/components/esp_driver_gptimer /home/janek/esp/esp-idf/components/esp_driver_i2c /home/janek/esp/esp-idf/components/esp_driver_i2s /home/janek/esp/esp-idf/components/esp_driver_isp /home/janek/esp/esp-idf/components/esp_driver_jpeg /home/janek/esp/esp-idf/components/esp_driver_ledc /home/janek/esp/esp-idf/components/esp_driver_mcpwm /home/janek/esp/esp-idf/components/esp_driver_parlio /home/janek/esp/esp-idf/components/esp_driver_pcnt /home/janek/esp/esp-idf/components/esp_driver_ppa /home/janek/esp/esp-idf/components/esp_driver_rmt /home/janek/esp/esp-idf/components/esp_driver_sd_intf /home/janek/esp/esp-idf/components/esp_driver_sdio /home/janek/esp/esp-idf/components/esp_driver_sdm /home/janek/esp/esp-idf/components/esp_driver_sdmmc /home/janek/esp/esp-idf/components/esp_driver_sdspi /home/janek/esp/esp-idf/components/esp_driver_spi /home/janek/esp/esp-idf/components/esp_driver_touch_sens /home/janek/esp/esp-idf/components/esp_driver_tsens /home/janek/esp/esp-idf/components/esp_driver_twai /home/janek/esp/esp-idf/components/esp_driver_uart /home/janek/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/janek/esp/esp-idf/components/esp_eth /home/janek/esp/esp-idf/components/esp_event /home/janek/esp/esp-idf/components/esp_gdbstub /home/janek/esp/esp-idf/components/esp_hid /home/janek/esp/esp-idf/components/esp_http_client /home/janek/esp/esp-idf/components/esp_http_server /home/janek/esp/esp-idf/components/esp_https_ota /home/janek/esp/esp-idf/components/esp_https_server /home/janek/esp/esp-idf/components/esp_hw_support /home/janek/esp/esp-idf/components/esp_lcd /home/janek/esp/esp-idf/components/esp_local_ctrl /home/janek/esp/esp-idf/components/esp_mm /home/janek/esp/esp-idf/components/esp_netif /home/janek/esp/esp-idf/components/esp_netif_stack /home/janek/esp/esp-idf/components/esp_partition /home/janek/esp/esp-idf/components/esp_phy /home/janek/esp/esp-idf/components/esp_pm /home/janek/esp/esp-idf/components/esp_psram /home/janek/esp/esp-idf/components/esp_ringbuf /home/janek/esp/esp-idf/components/esp_rom /home/janek/esp/esp-idf/components/esp_security /home/janek/esp/esp-idf/components/esp_system /home/janek/esp/esp-idf/components/esp_timer /home/janek/esp/esp-idf/components/esp_vfs_console /home/janek/esp/esp-idf/components/esp_wifi /home/janek/esp/esp-idf/components/espcoredump /home/janek/esp/esp32-cam-web/managed_components/espressif__esp32-camera /home/janek/esp/esp-idf/components/esptool_py /home/janek/esp/esp-idf/components/fatfs /home/janek/esp/esp-idf/components/freertos /home/janek/esp/esp-idf/components/hal /home/janek/esp/esp-idf/components/heap /home/janek/esp/esp-idf/components/http_parser /home/janek/esp/esp-idf/components/idf_test /home/janek/esp/esp-idf/components/ieee802154 /home/janek/esp/esp-idf/components/json /home/janek/esp/esp-idf/components/log /home/janek/esp/esp-idf/components/lwip /home/janek/esp/esp32-cam-web/main /home/janek/esp/esp-idf/components/mbedtls /home/janek/esp/esp-idf/components/mqtt /home/janek/esp/esp-idf/components/newlib /home/janek/esp/esp-idf/components/nvs_flash /home/janek/esp/esp-idf/components/nvs_sec_provider /home/janek/esp/esp-idf/components/openthread /home/janek/esp/esp-idf/components/partition_table /home/janek/esp/esp-idf/components/perfmon /home/janek/esp/esp-idf/components/protobuf-c /home/janek/esp/esp-idf/components/protocomm /home/janek/esp/esp-idf/components/pthread /home/janek/esp/esp-idf/components/rt /home/janek/esp/esp-idf/components/sdmmc /home/janek/esp/esp-idf/components/soc /home/janek/esp/esp-idf/components/spi_flash /home/janek/esp/esp-idf/components/spiffs /home/janek/esp/esp-idf/components/tcp_transport /home/janek/esp/esp-idf/components/ulp /home/janek/esp/esp-idf/components/unity /home/janek/esp/esp-idf/components/usb /home/janek/esp/esp-idf/components/vfs /home/janek/esp/esp-idf/components/wear_levelling /home/janek/esp/esp-idf/components/wifi_provisioning /home/janek/esp/esp-idf/components/wpa_supplicant /home/janek/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/janek/esp/esp32-cam-web/build
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj 
+/home/janek/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v6.0-dev-774-g68b583f30c\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/janek/esp/esp32-cam-web/build/config -I/home/janek/esp/esp32-cam-web/main -I/home/janek/esp/esp-idf/components/newlib/platform_include -I/home/janek/esp/esp-idf/components/freertos/config/include -I/home/janek/esp/esp-idf/components/freertos/config/include/freertos -I/home/janek/esp/esp-idf/components/freertos/config/xtensa/include -I/home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/janek/esp/esp-idf/components/freertos/esp_additions/include -I/home/janek/esp/esp-idf/components/esp_hw_support/include -I/home/janek/esp/esp-idf/components/esp_hw_support/include/soc -I/home/janek/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/janek/esp/esp-idf/components/esp_hw_support/dma/include -I/home/janek/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/janek/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/home/janek/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/home/janek/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -I/home/janek/esp/esp-idf/components/esp_hw_support/power_supply/include -I/home/janek/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/janek/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/home/janek/esp/esp-idf/components/heap/include -I/home/janek/esp/esp-idf/components/heap/tlsf -I/home/janek/esp/esp-idf/components/log/include -I/home/janek/esp/esp-idf/components/soc/include -I/home/janek/esp/esp-idf/components/soc/esp32 -I/home/janek/esp/esp-idf/components/soc/esp32/include -I/home/janek/esp/esp-idf/components/soc/esp32/register -I/home/janek/esp/esp-idf/components/hal/platform_port/include -I/home/janek/esp/esp-idf/components/hal/esp32/include -I/home/janek/esp/esp-idf/components/hal/include -I/home/janek/esp/esp-idf/components/esp_rom/include -I/home/janek/esp/esp-idf/components/esp_rom/esp32/include -I/home/janek/esp/esp-idf/components/esp_rom/esp32/include/esp32 -I/home/janek/esp/esp-idf/components/esp_rom/esp32 -I/home/janek/esp/esp-idf/components/esp_common/include -I/home/janek/esp/esp-idf/components/esp_system/include -I/home/janek/esp/esp-idf/components/esp_system/port/soc -I/home/janek/esp/esp-idf/components/esp_system/port/include/private -I/home/janek/esp/esp-idf/components/xtensa/esp32/include -I/home/janek/esp/esp-idf/components/xtensa/include -I/home/janek/esp/esp-idf/components/xtensa/deprecated_include -I/home/janek/esp/esp-idf/components/lwip/include -I/home/janek/esp/esp-idf/components/lwip/include/apps -I/home/janek/esp/esp-idf/components/lwip/include/apps/sntp -I/home/janek/esp/esp-idf/components/lwip/lwip/src/include -I/home/janek/esp/esp-idf/components/lwip/port/include -I/home/janek/esp/esp-idf/components/lwip/port/freertos/include -I/home/janek/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/janek/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/janek/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/janek/esp/esp32-cam-web/managed_components/espressif__esp32-camera/driver/include -I/home/janek/esp/esp32-cam-web/managed_components/espressif__esp32-camera/conversions/include -I/home/janek/esp/esp-idf/components/driver/deprecated -I/home/janek/esp/esp-idf/components/driver/i2c/include -I/home/janek/esp/esp-idf/components/driver/touch_sensor/include -I/home/janek/esp/esp-idf/components/driver/twai/include -I/home/janek/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/janek/esp/esp-idf/components/esp_pm/include -I/home/janek/esp/esp-idf/components/esp_ringbuf/include -I/home/janek/esp/esp-idf/components/esp_driver_gpio/include -I/home/janek/esp/esp-idf/components/esp_driver_pcnt/include -I/home/janek/esp/esp-idf/components/esp_driver_gptimer/include -I/home/janek/esp/esp-idf/components/esp_driver_spi/include -I/home/janek/esp/esp-idf/components/esp_driver_mcpwm/include -I/home/janek/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/home/janek/esp/esp-idf/components/esp_driver_i2s/include -I/home/janek/esp/esp-idf/components/esp_driver_sdmmc/include -I/home/janek/esp/esp-idf/components/esp_driver_sdmmc/legacy/include -I/home/janek/esp/esp-idf/components/esp_driver_sd_intf/include -I/home/janek/esp/esp-idf/components/sdmmc/include -I/home/janek/esp/esp-idf/components/esp_driver_sdspi/include -I/home/janek/esp/esp-idf/components/esp_driver_sdio/include -I/home/janek/esp/esp-idf/components/esp_driver_dac/include -I/home/janek/esp/esp-idf/components/esp_driver_rmt/include -I/home/janek/esp/esp-idf/components/esp_driver_tsens/include -I/home/janek/esp/esp-idf/components/esp_driver_sdm/include -I/home/janek/esp/esp-idf/components/esp_driver_i2c/include -I/home/janek/esp/esp-idf/components/esp_driver_uart/include -I/home/janek/esp/esp-idf/components/vfs/include -I/home/janek/esp/esp-idf/components/esp_driver_ledc/include -I/home/janek/esp/esp-idf/components/esp_driver_parlio/include -I/home/janek/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/home/janek/esp/esp-idf/components/esp_driver_twai/include -I/home/janek/esp/esp-idf/components/mbedtls/port/include -I/home/janek/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/janek/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/janek/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/janek/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/home/janek/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/home/janek/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/home/janek/esp/esp-idf/components/esp_app_format/include -I/home/janek/esp/esp-idf/components/esp_bootloader_format/include -I/home/janek/esp/esp-idf/components/app_update/include -I/home/janek/esp/esp-idf/components/bootloader_support/include -I/home/janek/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/janek/esp/esp-idf/components/esp_partition/include -I/home/janek/esp/esp-idf/components/efuse/include -I/home/janek/esp/esp-idf/components/efuse/esp32/include -I/home/janek/esp/esp-idf/components/esp_mm/include -I/home/janek/esp/esp-idf/components/spi_flash/include -I/home/janek/esp/esp-idf/components/esp_security/include -I/home/janek/esp/esp-idf/components/pthread/include -I/home/janek/esp/esp-idf/components/esp_timer/include -I/home/janek/esp/esp-idf/components/app_trace/include -I/home/janek/esp/esp-idf/components/esp_event/include -I/home/janek/esp/esp-idf/components/nvs_flash/include -I/home/janek/esp/esp-idf/components/esp_phy/include -I/home/janek/esp/esp-idf/components/esp_phy/esp32/include -I/home/janek/esp/esp-idf/components/esp_vfs_console/include -I/home/janek/esp/esp-idf/components/esp_netif/include -I/home/janek/esp/esp-idf/components/wpa_supplicant/include -I/home/janek/esp/esp-idf/components/wpa_supplicant/port/include -I/home/janek/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/janek/esp/esp-idf/components/esp_coex/include -I/home/janek/esp/esp-idf/components/esp_wifi/include -I/home/janek/esp/esp-idf/components/esp_wifi/include/local -I/home/janek/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/janek/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/janek/esp/esp-idf/components/esp_gdbstub/include -I/home/janek/esp/esp-idf/components/unity/include -I/home/janek/esp/esp-idf/components/unity/unity/src -I/home/janek/esp/esp-idf/components/cmock/CMock/src -I/home/janek/esp/esp-idf/components/console -I/home/janek/esp/esp-idf/components/esp_driver_bitscrambler/include -I/home/janek/esp/esp-idf/components/http_parser -I/home/janek/esp/esp-idf/components/esp-tls -I/home/janek/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/janek/esp/esp-idf/components/esp_adc/include -I/home/janek/esp/esp-idf/components/esp_adc/interface -I/home/janek/esp/esp-idf/components/esp_adc/esp32/include -I/home/janek/esp/esp-idf/components/esp_driver_isp/include -I/home/janek/esp/esp-idf/components/esp_driver_cam/include -I/home/janek/esp/esp-idf/components/esp_driver_cam/interface -I/home/janek/esp/esp-idf/components/esp_psram/include -I/home/janek/esp/esp-idf/components/esp_driver_jpeg/include -I/home/janek/esp/esp-idf/components/esp_driver_ppa/include -I/home/janek/esp/esp-idf/components/esp_driver_touch_sens/include -I/home/janek/esp/esp-idf/components/esp_driver_touch_sens/hw_ver1/include -I/home/janek/esp/esp-idf/components/esp_eth/include -I/home/janek/esp/esp-idf/components/esp_hid/include -I/home/janek/esp/esp-idf/components/tcp_transport/include -I/home/janek/esp/esp-idf/components/esp_http_client/include -I/home/janek/esp/esp-idf/components/esp_http_server/include -I/home/janek/esp/esp-idf/components/esp_https_ota/include -I/home/janek/esp/esp-idf/components/esp_https_server/include -I/home/janek/esp/esp-idf/components/esp_lcd/include -I/home/janek/esp/esp-idf/components/esp_lcd/interface -I/home/janek/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/janek/esp/esp-idf/components/protocomm/include/common -I/home/janek/esp/esp-idf/components/protocomm/include/security -I/home/janek/esp/esp-idf/components/protocomm/include/transports -I/home/janek/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/home/janek/esp/esp-idf/components/protocomm/proto-c -I/home/janek/esp/esp-idf/components/esp_local_ctrl/include -I/home/janek/esp/esp-idf/components/espcoredump/include -I/home/janek/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/janek/esp/esp-idf/components/wear_levelling/include -I/home/janek/esp/esp-idf/components/fatfs/diskio -I/home/janek/esp/esp-idf/components/fatfs/src -I/home/janek/esp/esp-idf/components/fatfs/vfs -I/home/janek/esp/esp-idf/components/idf_test/include -I/home/janek/esp/esp-idf/components/idf_test/include/esp32 -I/home/janek/esp/esp-idf/components/ieee802154/include -I/home/janek/esp/esp-idf/components/json/cJSON -I/home/janek/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/janek/esp/esp-idf/components/nvs_sec_provider/include -I/home/janek/esp/esp-idf/components/perfmon/include -I/home/janek/esp/esp-idf/components/rt/include -I/home/janek/esp/esp-idf/components/spiffs/include -I/home/janek/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -mfix-esp32-psram-cache-issue -mfix-esp32-psram-cache-strategy=memw -Og -fno-shrink-wrap -fmacro-prefix-map=/home/janek/esp/esp32-cam-web=. -fmacro-prefix-map=/home/janek/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj -c /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:50:36: error: unknown type name 'httpd_req_t'
+   50 | esp_err_t jpg_stream_httpd_handler(httpd_req_t *req){
+      |                                    ^~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:95:1: error: unknown type name 'httpd_handle_t'; did you mean 'intr_handle_t'?
+   95 | httpd_handle_t stream_httpd = NULL;
+      | ^~~~~~~~~~~~~~
+      | intr_handle_t
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:95:31: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   95 | httpd_handle_t stream_httpd = NULL;
+      |                               ^~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c: In function 'start_stream_server':
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:99:5: error: unknown type name 'httpd_config_t'
+   99 |     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+      |     ^~~~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:99:29: error: implicit declaration of function 'HTTPD_DEFAULT_CONFIG' [-Wimplicit-function-declaration]
+   99 |     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:100:11: error: request for member 'server_port' in something not a structure or union
+  100 |     config.server_port = 80;
+      |           ^
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:102:5: error: unknown type name 'httpd_uri_t'
+  102 |     httpd_uri_t stream_uri = {
+      |     ^~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:103:9: error: field name not in record or union initializer
+  103 |         .uri       = "/stream",
+      |         ^
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:103:9: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:103:22: error: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  103 |         .uri       = "/stream",
+      |                      ^~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:103:22: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:9: error: field name not in record or union initializer
+  104 |         .method    = HTTP_GET,
+      |         ^
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:9: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:22: error: 'HTTP_GET' undeclared (first use in this function)
+  104 |         .method    = HTTP_GET,
+      |                      ^~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:22: note: each undeclared identifier is reported only once for each function it appears in
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:22: warning: excess elements in scalar initializer
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:104:22: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:105:9: error: field name not in record or union initializer
+  105 |         .handler   = jpg_stream_httpd_handler,
+      |         ^
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:105:9: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:105:22: error: 'jpg_stream_httpd_handler' undeclared (first use in this function)
+  105 |         .handler   = jpg_stream_httpd_handler,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:105:22: warning: excess elements in scalar initializer
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:105:22: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:106:9: error: field name not in record or union initializer
+  106 |         .user_ctx  = NULL
+      |         ^
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:106:9: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:106:22: warning: excess elements in scalar initializer
+  106 |         .user_ctx  = NULL
+      |                      ^~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:106:22: note: (near initialization for 'stream_uri')
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:109:9: error: implicit declaration of function 'httpd_start' [-Wimplicit-function-declaration]
+  109 |     if (httpd_start(&stream_httpd, &config) == ESP_OK) {
+      |         ^~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:110:9: error: implicit declaration of function 'httpd_register_uri_handler' [-Wimplicit-function-declaration]
+  110 |         httpd_register_uri_handler(stream_httpd, &stream_uri);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c: At top level:
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:152:9: warning: "CAM_PIN_PWDN" redefined
+  152 | #define CAM_PIN_PWDN 32
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:129:9: note: this is the location of the previous definition
+  129 | #define CAM_PIN_PWDN -1  //power down is not used
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:154:9: warning: "CAM_PIN_XCLK" redefined
+  154 | #define CAM_PIN_XCLK 0
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:131:9: note: this is the location of the previous definition
+  131 | #define CAM_PIN_XCLK 21
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:162:9: warning: "CAM_PIN_D3" redefined
+  162 | #define CAM_PIN_D3 21
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:139:9: note: this is the location of the previous definition
+  139 | #define CAM_PIN_D3 19
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:163:9: warning: "CAM_PIN_D2" redefined
+  163 | #define CAM_PIN_D2 19
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:140:9: note: this is the location of the previous definition
+  140 | #define CAM_PIN_D2 18
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:164:9: warning: "CAM_PIN_D1" redefined
+  164 | #define CAM_PIN_D1 18
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:141:9: note: this is the location of the previous definition
+  141 | #define CAM_PIN_D1 5
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:165:9: warning: "CAM_PIN_D0" redefined
+  165 | #define CAM_PIN_D0 5
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:142:9: note: this is the location of the previous definition
+  142 | #define CAM_PIN_D0 4
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:47:20: warning: '_STREAM_PART' defined but not used [-Wunused-variable]
+   47 | static const char* _STREAM_PART = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+      |                    ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:46:20: warning: '_STREAM_BOUNDARY' defined but not used [-Wunused-variable]
+   46 | static const char* _STREAM_BOUNDARY = "\r\n--" PART_BOUNDARY "\r\n";
+      |                    ^~~~~~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:45:20: warning: '_STREAM_CONTENT_TYPE' defined but not used [-Wunused-variable]
+   45 | static const char* _STREAM_CONTENT_TYPE = "multipart/x-mixed-replace;boundary=" PART_BOUNDARY;
+      |                    ^~~~~~~~~~~~~~~~~~~~
+[2/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/janek/esp/esp32-cam-web/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script /home/janek/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/janek/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_security esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/janek/esp/esp-idf/components/bootloader /home/janek/esp/esp-idf/components/bootloader_support /home/janek/esp/esp-idf/components/efuse /home/janek/esp/esp-idf/components/esp_app_format /home/janek/esp/esp-idf/components/esp_bootloader_format /home/janek/esp/esp-idf/components/esp_common /home/janek/esp/esp-idf/components/esp_hw_support /home/janek/esp/esp-idf/components/esp_rom /home/janek/esp/esp-idf/components/esp_security /home/janek/esp/esp-idf/components/esp_system /home/janek/esp/esp-idf/components/esptool_py /home/janek/esp/esp-idf/components/freertos /home/janek/esp/esp-idf/components/hal /home/janek/esp/esp-idf/components/log /home/janek/esp/esp-idf/components/bootloader/subproject/main /home/janek/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/janek/esp/esp-idf/components/newlib /home/janek/esp/esp-idf/components/partition_table /home/janek/esp/esp-idf/components/soc /home/janek/esp/esp-idf/components/spi_flash /home/janek/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/janek/esp/esp32-cam-web/build/bootloader
+[1/1] cd /home/janek/esp/esp32-cam-web/build/bootloader/esp-idf/esptool_py && /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,745 @@
+Command: /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/janek/esp/esp32-cam-web/build/esp32-cam-web.elf /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.elf -m '/home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/janek/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ets Jul 29 2019 12:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15876
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-774-g68b583f30c 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 27 2025 19:34:15[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=247d0h (149456) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=000347f8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00034820 vaddr=3ffb0000 size=05384h ( 21380) load[0m
+[0;32mI (142) esp_image: segment 3: paddr=00039bac vaddr=40080000 size=0646ch ( 25708) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a42e4h (672484) map[0m
+[0;32mI (341) esp_image: segment 5: paddr=000e430c vaddr=4008646c size=16234h ( 90676) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (386) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (397) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (397) esp_psram: Speed: 40MHz[0m
+[0;32mI (397) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (403) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (411) cpu_start: Multicore app[0m
+[0;32mI (1319) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1327) cpu_start: Pro cpu start user code[0m
+[0;32mI (1327) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1327) app_init: Application information:[0m
+[0;32mI (1327) app_init: Project name:     esp32-cam-web[0m
+[0;32mI (1331) app_init: App version:      1[0m
+[0;32mI (1335) app_init: Compile time:     Jun 27 2025 19:34:08[0m
+[0;32mI (1340) app_init: ELF file SHA256:  e327e3cd4...[0m
+[0;32mI (1345) app_init: ESP-IDF:          v6.0-dev-774-g68b583f30c[0m
+[0;32mI (1350) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1354) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1358) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1362) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1368) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1373) heap_init: At 3FFB9D58 len 000262A8 (152 KiB): DRAM[0m
+[0;32mI (1379) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1384) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1390) heap_init: At 4009C6A0 len 00003960 (14 KiB): IRAM[0m
+[0;32mI (1395) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1402) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (1415) spi_flash: detected chip: generic[0m
+[0;32mI (1419) spi_flash: flash io: dio[0m
+[0;32mI (1422) main_task: Started on CPU0[0m
+[0;32mI (1432) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1432) main_task: Calling app_main()[0m
+[0;32mI (1432) cam_hal: cam init ok[0m
+[0;32mI (1432) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1442) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1472) camera: Detected camera at address=0x30[0m
+[0;32mI (1472) camera: Detected OV2640 camera[0m
+[0;32mI (1472) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1542) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 93[0m
+[0;32mI (1542) cam_hal: Allocating 384000 Byte frame buffer in PSRAM[0m
+[0;32mI (1542) cam_hal: cam config ok[0m
+[0;32mI (1552) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 12[0m
+[0;32mI (1652) wifi:wifi driver task: 3ffc29a0, prio:23, stack:6656, core=0[0m
+[0;32mI (1652) wifi:wifi firmware version: 2dcd4f5[0m
+[0;32mI (1652) wifi:wifi certification version: v7.0[0m
+[0;32mI (1652) wifi:config NVS flash: enabled[0m
+[0;32mI (1652) wifi:config nano formatting: disabled[0m
+[0;32mI (1662) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1662) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1672) wifi:Init management short buffer num: 32[0m
+[0;32mI (1672) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1682) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1682) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1682) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1692) wifi_init: rx ba win: 6[0m
+[0;32mI (1692) wifi_init: accept mbox: 6[0m
+[0;32mI (1692) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1702) wifi_init: udp mbox: 6[0m
+[0;32mI (1702) wifi_init: tcp mbox: 6[0m
+[0;32mI (1702) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1712) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1712) wifi_init: tcp mss: 1440[0m
+[0;32mI (1712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1722) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1722) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;33mW (1752) cam_hal: NO-SOI[0m
+[0;32mI (1792) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1812) wifi:mode : sta (ec:64:c9:5e:a4:88)[0m
+[0;32mI (1812) wifi:enable tsf[0m
+[0;32mI (1812) stream: Stream server started at http://<your_ip>/stream[0m
+[0;32mI (1812) main_task: Returned from app_main()[0m
+[0;32mI (1822) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (1832) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1842) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1852) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1862) wifi:<ba-add>idx:0 (ifx:0, 50:91:e3:bb:44:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (1962) wifi:connected with Pracownia, aid = 7, channel 9, BW20, bssid = 50:91:e3:bb:44:d0[0m
+[0;32mI (1962) wifi:security: WPA2-PSK, phy: bgn, rssi: -79[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (1962) wifi:pm start, type: 1[0m
+
+[0;32mI (1962) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 cam_hal: EV-VSYNC-OVF[0m
+us
+[0;32mI (2032) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (8682) esp_netif_handlers: sta ip: 192.168.100.66, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (19242) wifi:<ba-add>idx:1 (ifx:0, 50:91:e3:bb:44:d0), tid:0, ssn:0, winSize:64[0m
+[0;33mW (20522) cam_hal: NO-EOI[0m
+[0;32mI (20832) stream: MJPG: 119KB 351ms (2.8fps)[0m
+[0;32mI (21172) stream: MJPG: 121KB 335ms (3.0fps)[0m
+[0;32mI (21452) stream: MJPG: 117KB 284ms (3.5fps)[0m
+[0;32mI (21682) stream: MJPG: 114KB 229ms (4.3fps)[0m
+[0;33mW (21832) cam_hal: NO-EOI[0m
+[0;32mI (22072) stream: MJPG: 114KB 390ms (2.6fps)[0m
+[0;32mI (22302) stream: MJPG: 114KB 226ms (4.4fps)[0m
+[0;32mI (22532) stream: MJPG: 113KB 237ms (4.2fps)[0m
+[0;32mI (22772) stream: MJPG: 108KB 234ms (4.3fps)[0m
+[0;33mW (22952) cam_hal: NO-EOI[0m
+[0;33mW (23112) cam_hal: NO-EOI[0m
+[0;33mW (23272) cam_hal: NO-EOI[0m
+[0;33mW (23432) cam_hal: NO-EOI[0m
+[0;32mI (23642) stream: MJPG: 109KB 876ms (1.1fps)[0m
+[0;32mI (23872) stream: MJPG: 100KB 227ms (4.4fps)[0m
+[0;32mI (24012) stream: MJPG: 78KB 140ms (7.1fps)[0m
+[0;32mI (24182) stream: MJPG: 74KB 163ms (6.1fps)[0m
+[0;32mI (24342) stream: MJPG: 77KB 164ms (6.1fps)[0m
+[0;32mI (24502) stream: MJPG: 77KB 160ms (6.2fps)[0m
+[0;32mI (24652) stream: MJPG: 80KB 152ms (6.6fps)[0m
+[0;32mI (24822) stream: MJPG: 78KB 169ms (5.9fps)[0m
+[0;32mI (24982) stream: MJPG: 76KB 160ms (6.2fps)[0m
+[0;32mI (25132) stream: MJPG: 76KB 146ms (6.8fps)[0m
+[0;32mI (25292) stream: MJPG: 75KB 164ms (6.1fps)[0m
+[0;32mI (25452) stream: MJPG: 74KB 155ms (6.4fps)[0m
+[0;32mI (25632) stream: MJPG: 72KB 175ms (5.7fps)[0m
+[0;32mI (25782) stream: MJPG: 70KB 150ms (6.6fps)[0m
+[0;32mI (25952) stream: MJPG: 72KB 169ms (5.9fps)[0m
+[0;32mI (26092) stream: MJPG: 72KB 143ms (7.0fps)[0m
+[0;32mI (26272) stream: MJPG: 71KB 180ms (5.5fps)[0m
+[0;32mI (26422) stream: MJPG: 70KB 147ms (6.8fps)[0m
+[0;32mI (26582) stream: MJPG: 71KB 162ms (6.2fps)[0m
+[0;32mI (26742) stream: MJPG: 75KB 160ms (6.2fps)[0m
+[0;32mI (26912) stream: MJPG: 71KB 170ms (5.9fps)[0m
+[0;32mI (27062) stream: MJPG: 71KB 153ms (6.5fps)[0m
+[0;32mI (27232) stream: MJPG: 71KB 162ms (6.1fps)[0m
+[0;32mI (27372) stream: MJPG: 72KB 145ms (6.9fps)[0m
+[0;32mI (27532) stream: MJPG: 74KB 160ms (6.2fps)[0m
+[0;32mI (27692) stream: MJPG: 73KB 158ms (6.3fps)[0m
+[0;32mI (27862) stream: MJPG: 79KB 167ms (6.0fps)[0m
+[0;32mI (28082) stream: MJPG: 79KB 220ms (4.5fps)[0m
+[0;32mI (28292) stream: MJPG: 82KB 212ms (4.7fps)[0m
+[0;32mI (28512) stream: MJPG: 84KB 223ms (4.5fps)[0m
+[0;32mI (28672) stream: MJPG: 83KB 159ms (6.3fps)[0m
+[0;32mI (28832) stream: MJPG: 87KB 158ms (6.3fps)[0m
+[0;32mI (28992) stream: MJPG: 83KB 156ms (6.4fps)[0m
+[0;32mI (29152) stream: MJPG: 86KB 159ms (6.3fps)[0m
+[0;32mI (29322) stream: MJPG: 87KB 168ms (5.9fps)[0m
+[0;32mI (29552) stream: MJPG: 84KB 237ms (4.2fps)[0m
+[0;32mI (29712) stream: MJPG: 81KB 159ms (6.3fps)[0m
+[0;32mI (29862) stream: MJPG: 78KB 149ms (6.7fps)[0m
+[0;32mI (30022) stream: MJPG: 78KB 157ms (6.3fps)[0m
+[0;32mI (30182) stream: MJPG: 79KB 158ms (6.3fps)[0m
+[0;32mI (30342) stream: MJPG: 79KB 160ms (6.2fps)[0m
+[0;32mI (30502) stream: MJPG: 77KB 164ms (6.1fps)[0m
+[0;32mI (30672) stream: MJPG: 77KB 160ms (6.2fps)[0m
+[0;32mI (30822) stream: MJPG: 80KB 158ms (6.3fps)[0m
+[0;32mI (31002) stream: MJPG: 81KB 177ms (5.6fps)[0m
+[0;32mI (31232) stream: MJPG: 78KB 226ms (4.4fps)[0m
+[0;32mI (31392) stream: MJPG: 80KB 157ms (6.3fps)[0m
+[0;32mI (31562) stream: MJPG: 80KB 171ms (5.8fps)[0m
+[0;32mI (31782) stream: MJPG: 69KB 222ms (4.5fps)[0m
+[0;32mI (31952) stream: MJPG: 72KB 169ms (5.9fps)[0m
+[0;32mI (32102) stream: MJPG: 72KB 151ms (6.6fps)[0m
+[0;32mI (32282) stream: MJPG: 70KB 176ms (5.7fps)[0m
+[0;32mI (32672) stream: MJPG: 75KB 396ms (2.5fps)[0m
+[0;32mI (32972) stream: MJPG: 80KB 301ms (3.3fps)[0m
+[0;32mI (33222) stream: MJPG: 78KB 247ms (4.0fps)[0m
+[0;32mI (33392) stream: MJPG: 78KB 168ms (5.9fps)[0m
+[0;32mI (33542) stream: MJPG: 79KB 147ms (6.8fps)[0m
+[0;32mI (33712) stream: MJPG: 80KB 166ms (6.0fps)[0m
+[0;32mI (33862) stream: MJPG: 80KB 157ms (6.3fps)[0m
+[0;32mI (34032) stream: MJPG: 79KB 164ms (6.1fps)[0m
+[0;32mI (34182) stream: MJPG: 80KB 149ms (6.7fps)[0m
+[0;32mI (34342) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (34502) stream: MJPG: 74KB 158ms (6.3fps)[0m
+[0;32mI (34652) stream: MJPG: 75KB 150ms (6.7fps)[0m
+[0;32mI (34822) stream: MJPG: 72KB 168ms (5.9fps)[0m
+[0;32mI (34962) stream: MJPG: 71KB 147ms (6.8fps)[0m
+[0;32mI (35132) stream: MJPG: 73KB 164ms (6.1fps)[0m
+[0;32mI (35292) stream: MJPG: 73KB 161ms (6.2fps)[0m
+[0;32mI (35452) stream: MJPG: 68KB 155ms (6.4fps)[0m
+[0;32mI (35602) stream: MJPG: 63KB 156ms (6.4fps)[0m
+[0;32mI (35762) stream: MJPG: 61KB 160ms (6.2fps)[0m
+[0;32mI (35922) stream: MJPG: 62KB 155ms (6.4fps)[0m
+[0;32mI (36072) stream: MJPG: 52KB 154ms (6.5fps)[0m
+[0;32mI (36242) stream: MJPG: 56KB 163ms (6.1fps)[0m
+[0;32mI (36392) stream: MJPG: 53KB 152ms (6.5fps)[0m
+[0;32mI (36562) stream: MJPG: 54KB 166ms (6.0fps)[0m
+[0;32mI (36712) stream: MJPG: 56KB 157ms (6.3fps)[0m
+[0;32mI (36882) stream: MJPG: 55KB 164ms (6.1fps)[0m
+[0;32mI (37032) stream: MJPG: 54KB 152ms (6.6fps)[0m
+[0;32mI (37192) stream: MJPG: 57KB 162ms (6.1fps)[0m
+[0;32mI (37362) stream: MJPG: 57KB 164ms (6.1fps)[0m
+[0;32mI (37512) stream: MJPG: 57KB 156ms (6.4fps)[0m
+[0;32mI (37682) stream: MJPG: 57KB 167ms (6.0fps)[0m
+[0;32mI (37842) stream: MJPG: 56KB 153ms (6.5fps)[0m
+[0;32mI (38002) stream: MJPG: 57KB 162ms (6.2fps)[0m
+[0;32mI (38162) stream: MJPG: 57KB 159ms (6.3fps)[0m
+[0;32mI (38322) stream: MJPG: 57KB 164ms (6.1fps)[0m
+[0;32mI (38472) stream: MJPG: 57KB 150ms (6.6fps)[0m
+[0;32mI (38642) stream: MJPG: 57KB 163ms (6.1fps)[0m
+[0;32mI (38802) stream: MJPG: 57KB 161ms (6.2fps)[0m
+[0;32mI (38952) stream: MJPG: 58KB 156ms (6.4fps)[0m
+[0;32mI (39122) stream: MJPG: 58KB 164ms (6.1fps)[0m
+[0;32mI (39282) stream: MJPG: 58KB 162ms (6.2fps)[0m
+[0;32mI (39462) stream: MJPG: 57KB 179ms (5.6fps)[0m
+[0;32mI (39662) stream: MJPG: 58KB 194ms (5.1fps)[0m
+[0;32mI (39872) stream: MJPG: 57KB 211ms (4.7fps)[0m
+[0;32mI (40092) stream: MJPG: 57KB 220ms (4.5fps)[0m
+[0;32mI (40242) stream: MJPG: 55KB 152ms (6.6fps)[0m
+[0;32mI (40392) stream: MJPG: 48KB 147ms (6.8fps)[0m
+[0;32mI (40552) stream: MJPG: 50KB 164ms (6.1fps)[0m
+[0;32mI (40732) stream: MJPG: 73KB 174ms (5.7fps)[0m
+[0;32mI (40892) stream: MJPG: 77KB 164ms (6.1fps)[0m
+[0;32mI (41062) stream: MJPG: 77KB 165ms (6.0fps)[0m
+[0;32mI (41212) stream: MJPG: 76KB 153ms (6.5fps)[0m
+[0;32mI (41382) stream: MJPG: 81KB 167ms (6.0fps)[0m
+[0;32mI (41532) stream: MJPG: 84KB 153ms (6.5fps)[0m
+[0;32mI (41692) stream: MJPG: 78KB 158ms (6.3fps)[0m
+[0;32mI (41842) stream: MJPG: 72KB 146ms (6.8fps)[0m
+[0;32mI (42012) stream: MJPG: 80KB 172ms (5.8fps)[0m
+[0;32mI (42162) stream: MJPG: 75KB 150ms (6.6fps)[0m
+[0;32mI (42332) stream: MJPG: 79KB 169ms (5.9fps)[0m
+[0;32mI (42482) stream: MJPG: 77KB 154ms (6.5fps)[0m
+[0;32mI (42642) stream: MJPG: 74KB 159ms (6.3fps)[0m
+[0;32mI (42802) stream: MJPG: 71KB 161ms (6.2fps)[0m
+[0;32mI (42962) stream: MJPG: 69KB 151ms (6.6fps)[0m
+[0;32mI (43122) stream: MJPG: 68KB 163ms (6.1fps)[0m
+[0;32mI (43282) stream: MJPG: 66KB 158ms (6.3fps)[0m
+[0;32mI (43442) stream: MJPG: 65KB 162ms (6.2fps)[0m
+[0;32mI (43602) stream: MJPG: 66KB 156ms (6.4fps)[0m
+[0;32mI (43762) stream: MJPG: 65KB 159ms (6.3fps)[0m
+[0;32mI (43922) stream: MJPG: 63KB 161ms (6.2fps)[0m
+[0;32mI (44082) stream: MJPG: 62KB 158ms (6.3fps)[0m
+[0;32mI (44242) stream: MJPG: 61KB 161ms (6.2fps)[0m
+[0;32mI (44392) stream: MJPG: 59KB 149ms (6.7fps)[0m
+[0;32mI (44552) stream: MJPG: 58KB 165ms (6.1fps)[0m
+[0;32mI (44712) stream: MJPG: 56KB 158ms (6.3fps)[0m
+[0;32mI (44882) stream: MJPG: 56KB 168ms (5.9fps)[0m
+[0;32mI (45032) stream: MJPG: 56KB 151ms (6.6fps)[0m
+[0;32mI (45192) stream: MJPG: 58KB 159ms (6.3fps)[0m
+[0;32mI (45352) stream: MJPG: 59KB 163ms (6.1fps)[0m
+[0;32mI (45512) stream: MJPG: 61KB 155ms (6.4fps)[0m
+[0;32mI (45682) stream: MJPG: 62KB 168ms (5.9fps)[0m
+[0;32mI (45832) stream: MJPG: 63KB 155ms (6.4fps)[0m
+[0;32mI (46002) stream: MJPG: 65KB 169ms (5.9fps)[0m
+[0;32mI (46162) stream: MJPG: 68KB 154ms (6.5fps)[0m
+[0;33mW (46282) cam_hal: NO-EOI[0m
+[0;32mI (46532) stream: MJPG: 64KB 376ms (2.7fps)[0m
+[0;32mI (46782) stream: MJPG: 65KB 250ms (4.0fps)[0m
+[0;32mI (46982) stream: MJPG: 66KB 199ms (5.0fps)[0m
+[0;32mI (47132) stream: MJPG: 63KB 144ms (6.9fps)[0m
+[0;32mI (47272) stream: MJPG: 64KB 145ms (6.9fps)[0m
+[0;32mI (47442) stream: MJPG: 63KB 163ms (6.1fps)[0m
+[0;32mI (47602) stream: MJPG: 62KB 165ms (6.0fps)[0m
+[0;32mI (47752) stream: MJPG: 59KB 146ms (6.8fps)[0m
+[0;32mI (47912) stream: MJPG: 58KB 160ms (6.2fps)[0m
+[0;32mI (48072) stream: MJPG: 56KB 156ms (6.4fps)[0m
+[0;32mI (48232) stream: MJPG: 55KB 165ms (6.0fps)[0m
+[0;32mI (48402) stream: MJPG: 55KB 163ms (6.1fps)[0m
+[0;32mI (48552) stream: MJPG: 55KB 156ms (6.4fps)[0m
+[0;32mI (48722) stream: MJPG: 57KB 163ms (6.1fps)[0m
+[0;32mI (48872) stream: MJPG: 58KB 155ms (6.4fps)[0m
+[0;32mI (49042) stream: MJPG: 60KB 165ms (6.0fps)[0m
+[0;32mI (49202) stream: MJPG: 62KB 160ms (6.2fps)[0m
+[0;32mI (49362) stream: MJPG: 63KB 156ms (6.4fps)[0m
+[0;32mI (49512) stream: MJPG: 65KB 159ms (6.3fps)[0m
+[0;32mI (49682) stream: MJPG: 63KB 163ms (6.1fps)[0m
+[0;32mI (49842) stream: MJPG: 62KB 162ms (6.1fps)[0m
+[0;32mI (50002) stream: MJPG: 62KB 162ms (6.2fps)[0m
+[0;32mI (50152) stream: MJPG: 65KB 150ms (6.7fps)[0m
+[0;32mI (50312) stream: MJPG: 63KB 157ms (6.4fps)[0m
+[0;32mI (50482) stream: MJPG: 61KB 170ms (5.9fps)[0m
+[0;32mI (50632) stream: MJPG: 59KB 151ms (6.6fps)[0m
+[0;32mI (50802) stream: MJPG: 57KB 163ms (6.1fps)[0m
+[0;32mI (50952) stream: MJPG: 57KB 154ms (6.5fps)[0m
+[0;32mI (51112) stream: MJPG: 56KB 162ms (6.1fps)[0m
+[0;32mI (51272) stream: MJPG: 56KB 158ms (6.3fps)[0m
+[0;32mI (51432) stream: MJPG: 56KB 157ms (6.3fps)[0m
+[0;32mI (51592) stream: MJPG: 58KB 160ms (6.2fps)[0m
+[0;32mI (51752) stream: MJPG: 59KB 156ms (6.4fps)[0m
+[0;32mI (51912) stream: MJPG: 61KB 166ms (6.0fps)[0m
+[0;32mI (52072) stream: MJPG: 63KB 157ms (6.4fps)[0m
+[0;32mI (52232) stream: MJPG: 65KB 163ms (6.1fps)[0m
+[0;32mI (52392) stream: MJPG: 63KB 152ms (6.5fps)[0m
+[0;32mI (52552) stream: MJPG: 63KB 167ms (6.0fps)[0m
+[0;32mI (52712) stream: MJPG: 63KB 151ms (6.6fps)[0m
+[0;32mI (52882) stream: MJPG: 64KB 170ms (5.9fps)[0m
+[0;32mI (53032) stream: MJPG: 63KB 156ms (6.4fps)[0m
+[0;32mI (53202) stream: MJPG: 61KB 164ms (6.1fps)[0m
+[0;32mI (53372) stream: MJPG: 60KB 169ms (5.9fps)[0m
+[0;32mI (53522) stream: MJPG: 57KB 149ms (6.7fps)[0m
+[0;32mI (53672) stream: MJPG: 56KB 155ms (6.4fps)[0m
+[0;32mI (53832) stream: MJPG: 55KB 159ms (6.3fps)[0m
+[0;32mI (54002) stream: MJPG: 55KB 172ms (5.8fps)[0m
+[0;32mI (54172) stream: MJPG: 54KB 170ms (5.9fps)[0m
+[0;32mI (54322) stream: MJPG: 56KB 142ms (7.0fps)[0m
+[0;32mI (54502) stream: MJPG: 58KB 181ms (5.5fps)[0m
+[0;32mI (54632) stream: MJPG: 59KB 127ms (7.8fps)[0m
+[0;32mI (54792) stream: MJPG: 61KB 165ms (6.1fps)[0m
+[0;32mI (54952) stream: MJPG: 63KB 162ms (6.2fps)[0m
+[0;32mI (55112) stream: MJPG: 63KB 157ms (6.3fps)[0m
+[0;32mI (55272) stream: MJPG: 63KB 159ms (6.3fps)[0m
+[0;32mI (55432) stream: MJPG: 64KB 161ms (6.2fps)[0m
+[0;32mI (55602) stream: MJPG: 67KB 167ms (6.0fps)[0m
+[0;32mI (55752) stream: MJPG: 68KB 151ms (6.6fps)[0m
+[0;32mI (55922) stream: MJPG: 68KB 171ms (5.8fps)[0m
+[0;32mI (56072) stream: MJPG: 64KB 145ms (6.9fps)[0m
+[0;32mI (56242) stream: MJPG: 64KB 167ms (6.0fps)[0m
+[0;32mI (56392) stream: MJPG: 67KB 152ms (6.6fps)[0m
+[0;32mI (56562) stream: MJPG: 82KB 176ms (5.7fps)[0m
+[0;32mI (56722) stream: MJPG: 80KB 155ms (6.4fps)[0m
+[0;32mI (56882) stream: MJPG: 80KB 163ms (6.1fps)[0m
+[0;32mI (57052) stream: MJPG: 81KB 164ms (6.1fps)[0m
+[0;32mI (57202) stream: MJPG: 82KB 151ms (6.6fps)[0m
+[0;32mI (57362) stream: MJPG: 83KB 164ms (6.1fps)[0m
+[0;32mI (57522) stream: MJPG: 82KB 154ms (6.5fps)[0m
+[0;32mI (57692) stream: MJPG: 85KB 167ms (6.0fps)[0m
+[0;32mI (57852) stream: MJPG: 90KB 169ms (5.9fps)[0m
+[0;33mW (57962) cam_hal: NO-EOI[0m
+[0;32mI (58162) stream: MJPG: 75KB 309ms (3.2fps)[0m
+[0;32mI (58322) stream: MJPG: 75KB 155ms (6.4fps)[0m
+[0;32mI (58482) stream: MJPG: 79KB 159ms (6.3fps)[0m
+[0;32mI (58632) stream: MJPG: 71KB 150ms (6.7fps)[0m
+[0;32mI (58802) stream: MJPG: 73KB 170ms (5.9fps)[0m
+[0;32mI (58972) stream: MJPG: 79KB 164ms (6.1fps)[0m
+[0;32mI (59122) stream: MJPG: 78KB 159ms (6.3fps)[0m
+[0;32mI (59282) stream: MJPG: 77KB 156ms (6.4fps)[0m
+[0;32mI (59442) stream: MJPG: 78KB 159ms (6.3fps)[0m
+[0;32mI (59602) stream: MJPG: 82KB 163ms (6.1fps)[0m
+[0;32mI (59762) stream: MJPG: 81KB 155ms (6.4fps)[0m
+[0;32mI (59922) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (60082) stream: MJPG: 83KB 159ms (6.3fps)[0m
+[0;32mI (60252) stream: MJPG: 84KB 165ms (6.0fps)[0m
+[0;32mI (60412) stream: MJPG: 81KB 165ms (6.1fps)[0m
+[0;32mI (60562) stream: MJPG: 87KB 150ms (6.7fps)[0m
+[0;32mI (60732) stream: MJPG: 90KB 171ms (5.8fps)[0m
+[0;32mI (60912) stream: MJPG: 86KB 175ms (5.7fps)[0m
+[0;32mI (61152) stream: MJPG: 81KB 246ms (4.1fps)[0m
+[0;32mI (61372) stream: MJPG: 81KB 219ms (4.6fps)[0m
+[0;32mI (61572) stream: MJPG: 88KB 193ms (5.2fps)[0m
+[0;32mI (61792) stream: MJPG: 84KB 219ms (4.5fps)[0m
+[0;32mI (62012) stream: MJPG: 79KB 223ms (4.5fps)[0m
+[0;32mI (62162) stream: MJPG: 81KB 151ms (6.6fps)[0m
+[0;32mI (62322) stream: MJPG: 80KB 161ms (6.2fps)[0m
+[0;32mI (62482) stream: MJPG: 80KB 155ms (6.4fps)[0m
+[0;32mI (62642) stream: MJPG: 82KB 159ms (6.3fps)[0m
+[0;32mI (62812) stream: MJPG: 81KB 171ms (5.8fps)[0m
+[0;32mI (62962) stream: MJPG: 81KB 150ms (6.7fps)[0m
+[0;32mI (63122) stream: MJPG: 83KB 162ms (6.2fps)[0m
+[0;32mI (63292) stream: MJPG: 89KB 170ms (5.9fps)[0m
+[0;32mI (63442) stream: MJPG: 89KB 147ms (6.8fps)[0m
+[0;32mI (63612) stream: MJPG: 92KB 173ms (5.8fps)[0m
+[0;32mI (63772) stream: MJPG: 91KB 160ms (6.2fps)[0m
+[0;32mI (63932) stream: MJPG: 90KB 159ms (6.3fps)[0m
+[0;32mI (64082) stream: MJPG: 87KB 149ms (6.7fps)[0m
+[0;32mI (64242) stream: MJPG: 83KB 161ms (6.2fps)[0m
+[0;32mI (64412) stream: MJPG: 81KB 163ms (6.1fps)[0m
+[0;32mI (64552) stream: MJPG: 80KB 146ms (6.8fps)[0m
+[0;32mI (64722) stream: MJPG: 81KB 169ms (5.9fps)[0m
+[0;32mI (64882) stream: MJPG: 82KB 154ms (6.5fps)[0m
+[0;32mI (65042) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (65202) stream: MJPG: 82KB 162ms (6.2fps)[0m
+[0;32mI (65362) stream: MJPG: 86KB 160ms (6.2fps)[0m
+[0;32mI (65542) stream: MJPG: 86KB 176ms (5.7fps)[0m
+[0;32mI (65762) stream: MJPG: 85KB 226ms (4.4fps)[0m
+[0;32mI (65912) stream: MJPG: 84KB 148ms (6.7fps)[0m
+[0;32mI (66082) stream: MJPG: 81KB 163ms (6.1fps)[0m
+[0;32mI (66232) stream: MJPG: 80KB 156ms (6.4fps)[0m
+[0;32mI (66402) stream: MJPG: 80KB 165ms (6.0fps)[0m
+[0;32mI (66562) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (66722) stream: MJPG: 79KB 155ms (6.4fps)[0m
+[0;32mI (66882) stream: MJPG: 81KB 163ms (6.1fps)[0m
+[0;32mI (67052) stream: MJPG: 86KB 172ms (5.8fps)[0m
+[0;32mI (67222) stream: MJPG: 91KB 164ms (6.1fps)[0m
+[0;32mI (67482) stream: MJPG: 91KB 260ms (3.8fps)[0m
+[0;32mI (67722) stream: MJPG: 88KB 242ms (4.1fps)[0m
+[0;32mI (67962) stream: MJPG: 92KB 243ms (4.1fps)[0m
+[0;32mI (68162) stream: MJPG: 89KB 195ms (5.1fps)[0m
+[0;32mI (68322) stream: MJPG: 91KB 162ms (6.2fps)[0m
+[0;32mI (68482) stream: MJPG: 91KB 163ms (6.1fps)[0m
+[0;32mI (68642) stream: MJPG: 88KB 160ms (6.2fps)[0m
+[0;32mI (68792) stream: MJPG: 84KB 147ms (6.8fps)[0m
+[0;32mI (68962) stream: MJPG: 78KB 172ms (5.8fps)[0m
+[0;32mI (69112) stream: MJPG: 83KB 148ms (6.7fps)[0m
+[0;32mI (69272) stream: MJPG: 83KB 159ms (6.3fps)[0m
+[0;32mI (69442) stream: MJPG: 82KB 173ms (5.8fps)[0m
+[0;32mI (69592) stream: MJPG: 78KB 141ms (7.1fps)[0m
+[0;32mI (69752) stream: MJPG: 77KB 164ms (6.1fps)[0m
+[0;32mI (69912) stream: MJPG: 83KB 160ms (6.2fps)[0m
+[0;32mI (70082) stream: MJPG: 87KB 169ms (5.9fps)[0m
+[0;32mI (70242) stream: MJPG: 91KB 157ms (6.4fps)[0m
+[0;32mI (70402) stream: MJPG: 86KB 159ms (6.3fps)[0m
+[0;32mI (70562) stream: MJPG: 89KB 164ms (6.1fps)[0m
+[0;32mI (70722) stream: MJPG: 93KB 157ms (6.3fps)[0m
+[0;32mI (70902) stream: MJPG: 98KB 178ms (5.6fps)[0m
+[0;32mI (71132) stream: MJPG: 107KB 235ms (4.3fps)[0m
+[0;32mI (71292) stream: MJPG: 110KB 154ms (6.5fps)[0m
+[0;32mI (71452) stream: MJPG: 114KB 159ms (6.3fps)[0m
+[0;32mI (71652) stream: MJPG: 114KB 198ms (5.0fps)[0m
+[0;33mW (71802) cam_hal: NO-EOI[0m
+[0;32mI (72022) stream: MJPG: 116KB 370ms (2.7fps)[0m
+[0;32mI (72262) stream: MJPG: 114KB 247ms (4.0fps)[0m
+[0;33mW (72442) cam_hal: NO-EOI[0m
+[0;32mI (72662) stream: MJPG: 116KB 396ms (2.5fps)[0m
+[0;32mI (72892) stream: MJPG: 115KB 233ms (4.3fps)[0m
+[0;32mI (73142) stream: MJPG: 116KB 243ms (4.1fps)[0m
+[0;32mI (73382) stream: MJPG: 114KB 248ms (4.0fps)[0m
+[0;33mW (73562) cam_hal: NO-EOI[0m
+[0;32mI (73782) stream: MJPG: 118KB 394ms (2.5fps)[0m
+[0;33mW (73962) cam_hal: NO-EOI[0m
+[0;32mI (74182) stream: MJPG: 115KB 402ms (2.5fps)[0m
+[0;32mI (74462) stream: MJPG: 117KB 279ms (3.6fps)[0m
+[0;32mI (74682) stream: MJPG: 114KB 216ms (4.6fps)[0m
+[0;32mI (74922) stream: MJPG: 117KB 242ms (4.1fps)[0m
+[0;33mW (75082) cam_hal: NO-EOI[0m
+[0;32mI (75342) stream: MJPG: 116KB 425ms (2.4fps)[0m
+[0;33mW (75482) cam_hal: NO-EOI[0m
+[0;32mI (75742) stream: MJPG: 114KB 398ms (2.5fps)[0m
+[0;32mI (75932) stream: MJPG: 116KB 185ms (5.4fps)[0m
+[0;32mI (76102) stream: MJPG: 115KB 166ms (6.0fps)[0m
+[0;32mI (76332) stream: MJPG: 114KB 235ms (4.2fps)[0m
+[0;33mW (76522) cam_hal: NO-EOI[0m
+[0;32mI (76742) stream: MJPG: 114KB 407ms (2.5fps)[0m
+[0;32mI (76972) stream: MJPG: 114KB 233ms (4.3fps)[0m
+[0;33mW (77162) cam_hal: NO-EOI[0m
+[0;32mI (77382) stream: MJPG: 115KB 410ms (2.4fps)[0m
+[0;33mW (77562) cam_hal: NO-EOI[0m
+[0;32mI (77782) stream: MJPG: 116KB 398ms (2.5fps)[0m
+[0;32mI (78012) stream: MJPG: 117KB 231ms (4.3fps)[0m
+[0;32mI (78262) stream: MJPG: 117KB 246ms (4.1fps)[0m
+[0;32mI (78492) stream: MJPG: 117KB 233ms (4.3fps)[0m
+[0;33mW (78682) cam_hal: NO-EOI[0m
+[0;32mI (78902) stream: MJPG: 117KB 405ms (2.5fps)[0m
+[0;32mI (79132) stream: MJPG: 116KB 230ms (4.3fps)[0m
+[0;32mI (79292) stream: MJPG: 116KB 166ms (6.0fps)[0m
+[0;32mI (79532) stream: MJPG: 115KB 231ms (4.3fps)[0m
+[0;32mI (79692) stream: MJPG: 116KB 163ms (6.1fps)[0m
+[0;32mI (79932) stream: MJPG: 115KB 241ms (4.1fps)[0m
+[0;32mI (80172) stream: MJPG: 116KB 241ms (4.1fps)[0m
+[0;32mI (80412) stream: MJPG: 117KB 239ms (4.2fps)[0m
+[0;32mI (80652) stream: MJPG: 109KB 237ms (4.2fps)[0m
+[0;32mI (80882) stream: MJPG: 102KB 226ms (4.4fps)[0m
+[0;32mI (81042) stream: MJPG: 92KB 161ms (6.2fps)[0m
+[0;32mI (81192) stream: MJPG: 81KB 148ms (6.7fps)[0m
+[0;32mI (81352) stream: MJPG: 83KB 162ms (6.2fps)[0m
+[0;32mI (81502) stream: MJPG: 68KB 155ms (6.4fps)[0m
+[0;32mI (81662) stream: MJPG: 75KB 158ms (6.3fps)[0m
+[0;32mI (81892) stream: MJPG: 71KB 227ms (4.4fps)[0m
+[0;32mI (82122) stream: MJPG: 77KB 232ms (4.3fps)[0m
+[0;32mI (82312) stream: MJPG: 83KB 187ms (5.3fps)[0m
+[0;32mI (82482) stream: MJPG: 78KB 175ms (5.7fps)[0m
+[0;32mI (82652) stream: MJPG: 81KB 166ms (6.0fps)[0m
+[0;32mI (82872) stream: MJPG: 82KB 223ms (4.5fps)[0m
+[0;32mI (83032) stream: MJPG: 81KB 152ms (6.6fps)[0m
+[0;32mI (83192) stream: MJPG: 79KB 165ms (6.0fps)[0m
+[0;32mI (83372) stream: MJPG: 81KB 173ms (5.8fps)[0m
+[0;32mI (83512) stream: MJPG: 78KB 142ms (7.0fps)[0m
+[0;32mI (83672) stream: MJPG: 82KB 164ms (6.1fps)[0m
+[0;32mI (83832) stream: MJPG: 80KB 159ms (6.3fps)[0m
+[0;32mI (83992) stream: MJPG: 70KB 153ms (6.5fps)[0m
+[0;32mI (84142) stream: MJPG: 76KB 154ms (6.5fps)[0m
+[0;32mI (84312) stream: MJPG: 81KB 169ms (5.9fps)[0m
+[0;32mI (84462) stream: MJPG: 81KB 153ms (6.5fps)[0m
+[0;33mW (84592) cam_hal: NO-EOI[0m
+[0;32mI (84792) stream: MJPG: 80KB 325ms (3.1fps)[0m
+[0;32mI (84952) stream: MJPG: 85KB 158ms (6.3fps)[0m
+[0;32mI (85112) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (85262) stream: MJPG: 80KB 151ms (6.6fps)[0m
+[0;32mI (85442) stream: MJPG: 79KB 179ms (5.6fps)[0m
+[0;32mI (85612) stream: MJPG: 72KB 166ms (6.0fps)[0m
+[0;32mI (85822) stream: MJPG: 66KB 217ms (4.6fps)[0m
+[0;32mI (85982) stream: MJPG: 67KB 153ms (6.5fps)[0m
+[0;32mI (86132) stream: MJPG: 52KB 156ms (6.4fps)[0m
+[0;32mI (86292) stream: MJPG: 59KB 157ms (6.4fps)[0m
+[0;32mI (86462) stream: MJPG: 45KB 163ms (6.1fps)[0m
+[0;32mI (86602) stream: MJPG: 42KB 145ms (6.9fps)[0m
+[0;32mI (86762) stream: MJPG: 41KB 156ms (6.4fps)[0m
+[0;32mI (86922) stream: MJPG: 41KB 160ms (6.2fps)[0m
+[0;32mI (87082) stream: MJPG: 41KB 160ms (6.2fps)[0m
+[0;32mI (87252) stream: MJPG: 42KB 169ms (5.9fps)[0m
+[0;32mI (87402) stream: MJPG: 42KB 149ms (6.7fps)[0m
+[0;32mI (87572) stream: MJPG: 50KB 173ms (5.8fps)[0m
+[0;32mI (87742) stream: MJPG: 59KB 169ms (5.9fps)[0m
+[0;32mI (87892) stream: MJPG: 50KB 146ms (6.8fps)[0m
+[0;32mI (88082) stream: MJPG: 83KB 189ms (5.3fps)[0m
+[0;32mI (88242) stream: MJPG: 94KB 166ms (6.0fps)[0m
+[0;32mI (88492) stream: MJPG: 92KB 242ms (4.1fps)[0m
+[0;32mI (88752) stream: MJPG: 96KB 259ms (3.8fps)[0m
+[0;32mI (88972) stream: MJPG: 97KB 224ms (4.5fps)[0m
+[0;33mW (89152) cam_hal: NO-EOI[0m
+[0;33mW (89312) cam_hal: NO-EOI[0m
+[0;33mW (89472) cam_hal: NO-EOI[0m
+[0;32mI (89702) stream: MJPG: 102KB 729ms (1.4fps)[0m
+[0;32mI (89962) stream: MJPG: 101KB 257ms (3.9fps)[0m
+[0;32mI (90192) stream: MJPG: 109KB 232ms (4.3fps)[0m
+[0;32mI (90392) stream: MJPG: 102KB 202ms (4.9fps)[0m
+[0;32mI (90562) stream: MJPG: 107KB 168ms (5.9fps)[0m
+[0;32mI (90722) stream: MJPG: 105KB 154ms (6.5fps)[0m
+[0;32mI (90892) stream: MJPG: 108KB 170ms (5.9fps)[0m
+[0;32mI (91122) stream: MJPG: 110KB 229ms (4.4fps)[0m
+[0;32mI (91282) stream: MJPG: 110KB 168ms (5.9fps)[0m
+[0;33mW (91472) cam_hal: NO-EOI[0m
+[0;32mI (91692) stream: MJPG: 112KB 400ms (2.5fps)[0m
+[0;33mW (91872) cam_hal: NO-EOI[0m
+[0;33mW (92032) cam_hal: NO-EOI[0m
+[0;33mW (92192) cam_hal: NO-EOI[0m
+[0;32mI (92402) stream: MJPG: 112KB 715ms (1.4fps)[0m
+[0;33mW (92592) cam_hal: NO-EOI[0m
+[0;33mW (92752) cam_hal: NO-EOI[0m
+[0;32mI (92962) stream: MJPG: 115KB 561ms (1.8fps)[0m
+[0;32mI (93212) stream: MJPG: 115KB 245ms (4.1fps)[0m
+[0;32mI (93452) stream: MJPG: 116KB 242ms (4.1fps)[0m
+[0;32mI (93692) stream: MJPG: 117KB 236ms (4.2fps)[0m
+[0;32mI (93932) stream: MJPG: 117KB 238ms (4.2fps)[0m
+[0;32mI (94172) stream: MJPG: 119KB 242ms (4.1fps)[0m
+[0;33mW (94352) cam_hal: NO-EOI[0m
+[0;32mI (94572) stream: MJPG: 117KB 399ms (2.5fps)[0m
+[0;33mW (94752) cam_hal: NO-EOI[0m
+[0;33mW (94912) cam_hal: NO-EOI[0m
+[0;32mI (95132) stream: MJPG: 116KB 558ms (1.8fps)[0m
+[0;33mW (95312) cam_hal: NO-EOI[0m
+[0;33mW (95472) cam_hal: NO-EOI[0m
+[0;32mI (95722) stream: MJPG: 117KB 597ms (1.7fps)[0m
+[0;32mI (95992) stream: MJPG: 118KB 264ms (3.8fps)[0m
+[0;32mI (96212) stream: MJPG: 118KB 226ms (4.4fps)[0m
+[0;32mI (96482) stream: MJPG: 117KB 264ms (3.8fps)[0m
+[0;32mI (96732) stream: MJPG: 114KB 249ms (4.0fps)[0m
+[0;33mW (96912) cam_hal: NO-EOI[0m
+[0;32mI (97122) stream: MJPG: 115KB 393ms (2.5fps)[0m
+[0;32mI (97362) stream: MJPG: 113KB 233ms (4.3fps)[0m
+[0;32mI (97522) stream: MJPG: 115KB 167ms (6.0fps)[0m
+[0;33mW (97712) cam_hal: NO-EOI[0m
+[0;32mI (97932) stream: MJPG: 112KB 403ms (2.5fps)[0m
+[0;32mI (98172) stream: MJPG: 113KB 238ms (4.2fps)[0m
+[0;32mI (98402) stream: MJPG: 111KB 237ms (4.2fps)[0m
+[0;32mI (98622) stream: MJPG: 78KB 218ms (4.6fps)[0m
+[0;32mI (98782) stream: MJPG: 80KB 154ms (6.5fps)[0m
+[0;32mI (98982) stream: MJPG: 74KB 202ms (4.9fps)[0m
+[0;32mI (99172) stream: MJPG: 65KB 195ms (5.1fps)[0m
+[0;32mI (99332) stream: MJPG: 64KB 152ms (6.6fps)[0m
+[0;32mI (99502) stream: MJPG: 69KB 171ms (5.8fps)[0m
+[0;32mI (99662) stream: MJPG: 78KB 158ms (6.3fps)[0m
+[0;32mI (99812) stream: MJPG: 79KB 155ms (6.4fps)[0m
+[0;32mI (99992) stream: MJPG: 82KB 176ms (5.6fps)[0m
+[0;32mI (100162) stream: MJPG: 83KB 172ms (5.8fps)[0m
+[0;32mI (100392) stream: MJPG: 82KB 224ms (4.5fps)[0m
+[0;32mI (100552) stream: MJPG: 83KB 163ms (6.1fps)[0m
+[0;32mI (100712) stream: MJPG: 84KB 157ms (6.4fps)[0m
+[0;32mI (100872) stream: MJPG: 83KB 157ms (6.3fps)[0m
+[0;32mI (101022) stream: MJPG: 85KB 159ms (6.3fps)[0m
+[0;32mI (101182) stream: MJPG: 84KB 160ms (6.2fps)[0m
+[0;32mI (101352) stream: MJPG: 84KB 164ms (6.1fps)[0m
+[0;32mI (101502) stream: MJPG: 85KB 152ms (6.6fps)[0m
+[0;32mI (101672) stream: MJPG: 85KB 165ms (6.0fps)[0m
+[0;32mI (101832) stream: MJPG: 84KB 158ms (6.3fps)[0m
+[0;32mI (101992) stream: MJPG: 84KB 163ms (6.1fps)[0m
+[0;32mI (102142) stream: MJPG: 84KB 156ms (6.4fps)[0m
+[0;32mI (102312) stream: MJPG: 85KB 160ms (6.2fps)[0m
+[0;32mI (102462) stream: MJPG: 85KB 155ms (6.4fps)[0m
+[0;32mI (102652) stream: MJPG: 85KB 186ms (5.4fps)[0m
+[0;33mW (102822) cam_hal: NO-EOI[0m
+[0;32mI (103052) stream: MJPG: 80KB 399ms (2.5fps)[0m
+[0;32mI (103282) stream: MJPG: 80KB 234ms (4.3fps)[0m
+[0;32mI (103522) stream: MJPG: 85KB 238ms (4.2fps)[0m
+[0;32mI (103762) stream: MJPG: 86KB 244ms (4.1fps)[0m
+[0;32mI (103992) stream: MJPG: 91KB 222ms (4.5fps)[0m
+[0;32mI (104152) stream: MJPG: 93KB 161ms (6.2fps)[0m
+[0;32mI (104302) stream: MJPG: 98KB 154ms (6.5fps)[0m
+[0;32mI (104472) stream: MJPG: 100KB 164ms (6.1fps)[0m
+[0;32mI (104622) stream: MJPG: 102KB 153ms (6.5fps)[0m
+[0;32mI (104792) stream: MJPG: 101KB 167ms (6.0fps)[0m
+[0;32mI (104942) stream: MJPG: 103KB 153ms (6.5fps)[0m
+[0;32mI (105112) stream: MJPG: 102KB 164ms (6.1fps)[0m
+[0;32mI (105282) stream: MJPG: 101KB 171ms (5.8fps)[0m
+[0;32mI (105512) stream: MJPG: 100KB 228ms (4.4fps)[0m
+[0;32mI (105662) stream: MJPG: 98KB 149ms (6.7fps)[0m
+[0;32mI (105822) stream: MJPG: 91KB 165ms (6.1fps)[0m
+[0;32mI (105992) stream: MJPG: 92KB 162ms (6.2fps)[0m
+[0;32mI (106132) stream: MJPG: 88KB 145ms (6.9fps)[0m
+[0;32mI (106302) stream: MJPG: 89KB 169ms (5.9fps)[0m
+[0;32mI (106452) stream: MJPG: 90KB 152ms (6.6fps)[0m
+[0;32mI (106632) stream: MJPG: 93KB 176ms (5.7fps)[0m
+[0;32mI (106782) stream: MJPG: 97KB 149ms (6.7fps)[0m
+[0;32mI (106942) stream: MJPG: 97KB 163ms (6.1fps)[0m
+[0;32mI (107102) stream: MJPG: 104KB 160ms (6.2fps)[0m
+[0;32mI (107262) stream: MJPG: 103KB 160ms (6.2fps)[0m
+[0;32mI (107432) stream: MJPG: 104KB 163ms (6.1fps)[0m
+[0;32mI (107582) stream: MJPG: 103KB 154ms (6.5fps)[0m
+[0;32mI (107742) stream: MJPG: 103KB 160ms (6.2fps)[0m
+[0;32mI (107902) stream: MJPG: 102KB 156ms (6.4fps)[0m
+[0;32mI (108062) stream: MJPG: 103KB 162ms (6.2fps)[0m
+[0;32mI (108232) stream: MJPG: 103KB 169ms (5.9fps)[0m
+[0;32mI (108392) stream: MJPG: 103KB 159ms (6.3fps)[0m
+[0;32mI (108552) stream: MJPG: 103KB 155ms (6.4fps)[0m
+[0;32mI (108712) stream: MJPG: 104KB 159ms (6.3fps)[0m
+[0;32mI (108872) stream: MJPG: 102KB 161ms (6.2fps)[0m
+[0;32mI (109022) stream: MJPG: 103KB 153ms (6.5fps)[0m
+[0;32mI (109202) stream: MJPG: 103KB 181ms (5.5fps)[0m
+[0;32mI (109482) stream: MJPG: 105KB 273ms (3.7fps)[0m
+[0;32mI (109732) stream: MJPG: 106KB 256ms (3.9fps)[0m
+[0;32mI (109962) stream: MJPG: 104KB 227ms (4.4fps)[0m
+[0;32mI (110182) stream: MJPG: 107KB 223ms (4.5fps)[0m
+[0;32mI (110402) stream: MJPG: 107KB 213ms (4.7fps)[0m
+[0;32mI (110632) stream: MJPG: 105KB 230ms (4.3fps)[0m
+[0;32mI (110792) stream: MJPG: 106KB 159ms (6.3fps)[0m
+[0;32mI (110952) stream: MJPG: 105KB 161ms (6.2fps)[0m
+[0;32mI (111112) stream: MJPG: 103KB 156ms (6.4fps)[0m
+[0;32mI (111262) stream: MJPG: 103KB 157ms (6.4fps)[0m
+[0;32mI (111432) stream: MJPG: 105KB 165ms (6.0fps)[0m
+[0;32mI (111582) stream: MJPG: 102KB 152ms (6.5fps)[0m
+[0;32mI (111742) stream: MJPG: 105KB 163ms (6.1fps)[0m
+[0;32mI (111902) stream: MJPG: 104KB 157ms (6.4fps)[0m
+[0;32mI (112072) stream: MJPG: 104KB 171ms (5.8fps)[0m
+[0;32mI (112302) stream: MJPG: 105KB 228ms (4.4fps)[0m
+[0;32mI (112472) stream: MJPG: 106KB 164ms (6.1fps)[0m
+[0;32mI (112622) stream: MJPG: 105KB 152ms (6.5fps)[0m
+[0;32mI (112792) stream: MJPG: 105KB 168ms (5.9fps)[0m
+[0;32mI (112942) stream: MJPG: 105KB 153ms (6.5fps)[0m
+[0;32mI (113112) stream: MJPG: 105KB 165ms (6.0fps)[0m
+[0;32mI (113262) stream: MJPG: 105KB 157ms (6.3fps)[0m
+[0;32mI (113422) stream: MJPG: 104KB 155ms (6.4fps)[0m
+[0;32mI (113582) stream: MJPG: 106KB 165ms (6.1fps)[0m
+[0;32mI (113742) stream: MJPG: 105KB 159ms (6.3fps)[0m
+[0;32mI (113902) stream: MJPG: 103KB 160ms (6.2fps)[0m
+[0;32mI (114062) stream: MJPG: 105KB 155ms (6.4fps)[0m
+[0;32mI (114222) stream: MJPG: 104KB 162ms (6.2fps)[0m
+[0;32mI (114382) stream: MJPG: 103KB 160ms (6.2fps)[0m
+[0;33mW (114502) cam_hal: NO-EOI[0m
+[0;32mI (114712) stream: MJPG: 106KB 327ms (3.1fps)[0m
+[0;32mI (114852) stream: MJPG: 104KB 146ms (6.8fps)[0m
+[0;32mI (115022) stream: MJPG: 105KB 168ms (6.0fps)[0m
+[0;32mI (115182) stream: MJPG: 104KB 154ms (6.5fps)[0m
+[0;32mI (115342) stream: MJPG: 105KB 167ms (6.0fps)[0m
+[0;32mI (115502) stream: MJPG: 104KB 161ms (6.2fps)[0m
+[0;32mI (115662) stream: MJPG: 104KB 156ms (6.4fps)[0m
+[0;32mI (115822) stream: MJPG: 105KB 160ms (6.2fps)[0m
+[0;32mI (115982) stream: MJPG: 106KB 159ms (6.3fps)[0m
+[0;32mI (116152) stream: MJPG: 102KB 169ms (5.9fps)[0m
+[0;32mI (116402) stream: MJPG: 105KB 252ms (4.0fps)[0m
+[0;32mI (116662) stream: MJPG: 100KB 258ms (3.9fps)[0m
+[0;32mI (116892) stream: MJPG: 104KB 227ms (4.4fps)[0m
+[0;33mW (117052) cam_hal: NO-EOI[0m
+[0;32mI (117292) stream: MJPG: 105KB 402ms (2.5fps)[0m
+[0;32mI (117512) stream: MJPG: 105KB 215ms (4.6fps)[0m
+[0;32mI (117672) stream: MJPG: 104KB 160ms (6.2fps)[0m
+[0;32mI (117902) stream: MJPG: 106KB 236ms (4.2fps)[0m
+[0;32mI (118062) stream: MJPG: 105KB 157ms (6.3fps)[0m
+[0;32mI (118232) stream: MJPG: 103KB 167ms (6.0fps)[0m
+[0;32mI (118472) stream: MJPG: 105KB 239ms (4.2fps)[0m
+[0;32mI (118712) stream: MJPG: 104KB 239ms (4.2fps)[0m
+[0;32mI (118942) stream: MJPG: 106KB 233ms (4.3fps)[0m
+[0;32mI (119102) stream: MJPG: 105KB 156ms (6.4fps)[0m
+[0;32mI (119262) stream: MJPG: 105KB 161ms (6.2fps)[0m
+[0;32mI (119422) stream: MJPG: 104KB 163ms (6.1fps)[0m
+[0;32mI (119582) stream: MJPG: 104KB 156ms (6.4fps)[0m
+[0;32mI (119742) stream: MJPG: 101KB 162ms (6.2fps)[0m
+[0;32mI (119902) stream: MJPG: 104KB 160ms (6.2fps)[0m
+[0;32mI (120062) stream: MJPG: 104KB 159ms (6.3fps)[0m
+[0;32mI (120232) stream: MJPG: 105KB 161ms (6.2fps)[0m
+[0;32mI (120462) stream: MJPG: 103KB 235ms (4.2fps)[0m
+[0;32mI (120632) stream: MJPG: 105KB 171ms (5.8fps)[0m
+[0;32mI (120862) stream: MJPG: 106KB 230ms (4.3fps)[0m
+[0;32mI (121022) stream: MJPG: 104KB 153ms (6.5fps)[0m
+[0;32mI (121182) stream: MJPG: 105KB 164ms (6.1fps)[0m
+[0;32mI (121352) stream: MJPG: 105KB 165ms (6.0fps)[0m
+[0;32mI (121582) stream: MJPG: 104KB 237ms (4.2fps)[0m
+[0;32mI (121742) stream: MJPG: 107KB 151ms (6.6fps)[0m
+[0;32mI (121902) stream: MJPG: 107KB 167ms (6.0fps)[0m
+[0;32mI (122062) stream: MJPG: 108KB 158ms (6.3fps)[0m
+[0;32mI (122222) stream: MJPG: 106KB 162ms (6.2fps)[0m
+[0;32mI (122392) stream: MJPG: 105KB 162ms (6.2fps)[0m
+[0;32mI (122622) stream: MJPG: 106KB 236ms (4.2fps)[0m
+[0;32mI (122782) stream: MJPG: 105KB 160ms (6.2fps)[0m
+[0;32mI (122942) stream: MJPG: 106KB 156ms (6.4fps)[0m
+[0;32mI (123112) stream: MJPG: 103KB 170ms (5.8fps)[0m
+[0;32mI (123352) stream: MJPG: 102KB 240ms (4.2fps)[0m
+[0;32mI (123632) stream: MJPG: 107KB 280ms (3.6fps)[0m
+[0;32mI (123892) stream: MJPG: 107KB 263ms (3.8fps)[0m
+[0;32mI (124112) stream: MJPG: 108KB 216ms (4.6fps)[0m
+[0;32mI (124362) stream: MJPG: 108KB 252ms (4.0fps)[0m
+[0;32mI (124542) stream: MJPG: 108KB 182ms (5.5fps)[0m
+[0;32mI (124782) stream: MJPG: 99KB 230ms (4.3fps)[0m
+[0;32mI (124942) stream: MJPG: 103KB 161ms (6.2fps)[0m
+[0;32mI (125092) stream: MJPG: 100KB 151ms (6.6fps)[0m
+[0;32mI (125252) stream: MJPG: 92KB 164ms (6.1fps)[0m
+[0;32mI (125402) stream: MJPG: 77KB 147ms (6.8fps)[0m
+[0;32mI (125562) stream: MJPG: 78KB 161ms (6.2fps)[0m
+[0;32mI (125742) stream: MJPG: 81KB 179ms (5.6fps)[0m
+[0;32mI (125882) stream: MJPG: 74KB 139ms (7.2fps)[0m
+[0;32mI (126082) stream: MJPG: 73KB 200ms (5.0fps)[0m
+[0;32mI (126282) stream: MJPG: 73KB 198ms (5.0fps)[0m
+[0;32mI (126442) stream: MJPG: 79KB 157ms (6.3fps)[0m
+[0;32mI (126602) stream: MJPG: 80KB 164ms (6.1fps)[0m
+[0;32mI (126752) stream: MJPG: 80KB 153ms (6.5fps)[0m
+[0;32mI (126922) stream: MJPG: 81KB 166ms (6.0fps)[0m
+[0;32mI (127092) stream: MJPG: 82KB 165ms (6.1fps)[0m
+[0;32mI (127242) stream: MJPG: 81KB 154ms (6.5fps)[0m
+[0;32mI (127452) stream: MJPG: 81KB 206ms (4.8fps)[0m
+[0;32mI (127642) stream: MJPG: 82KB 198ms (5.0fps)[0m
+[0;32mI (127832) stream: MJPG: 82KB 185ms (5.4fps)[0m
+[0;32mI (128052) stream: MJPG: 82KB 218ms (4.6fps)[0m
+[0;32mI (128202) stream: MJPG: 81KB 154ms (6.5fps)[0m
+[0;32mI (128362) stream: MJPG: 81KB 154ms (6.5fps)[0m
+[0;32mI (128522) stream: MJPG: 80KB 163ms (6.1fps)[0m
+[0;32mI (128682) stream: MJPG: 80KB 160ms (6.2fps)[0m
+[0;32mI (128842) stream: MJPG: 80KB 160ms (6.2fps)[0m
+[0;32mI (129002) stream: MJPG: 81KB 160ms (6.2fps)[0m
+[0;32mI (129172) stream: MJPG: 81KB 171ms (5.8fps)[0m
+[0;32mI (129332) stream: MJPG: 81KB 156ms (6.4fps)[0m
+[0;32mI (129482) stream: MJPG: 80KB 153ms (6.5fps)[0m
+[0;32mI (129642) stream: MJPG: 81KB 159ms (6.3fps)[0m
+[0;32mI (129802) stream: MJPG: 81KB 161ms (6.2fps)[0m
+[0;32mI (129962) stream: MJPG: 81KB 158ms (6.3fps)[0m
+[0;32mI (130122) stream: MJPG: 81KB 158ms (6.3fps)[0m
+[0;32mI (130282) stream: MJPG: 81KB 162ms (6.2fps)[0m
+[0;32mI (130442) stream: MJPG: 82KB 155ms (6.4fps)[0m
+[0;32mI (130602) stream: MJPG: 82KB 164ms (6.1fps)[0m
+[0;32mI (130812) stream: MJPG: 80KB 210ms (4.8fps)[0m
+[0;32mI (131092) stream: MJPG: 82KB 276ms (3.6fps)[0m
+[0;32mI (131292) stream: MJPG: 84KB 197ms (5.1fps)[0m
+[0;32mI (131522) stream: MJPG: 81KB 235ms (4.3fps)[0m
+[0;32mI (131722) stream: MJPG: 80KB 199ms (5.0fps)[0m

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader
+/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader.rule
+/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader-complete.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

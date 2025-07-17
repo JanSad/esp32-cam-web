@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/janek/esp/esp32-cam-web/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

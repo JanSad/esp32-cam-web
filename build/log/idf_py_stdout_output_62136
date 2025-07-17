@@ -1,0 +1,253 @@
+Command: /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB1 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/janek/esp/esp32-cam-web/build/esp32-cam-web.elf /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.elf -m '/home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/janek/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB1'
+ets Jul 29 2019 12:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-774-g68b583f30c 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 27 2025 18:18:04[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=247d0h (149456) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=000347f8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00034820 vaddr=3ffb0000 size=05384h ( 21380) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00039bac vaddr=40080000 size=0646ch ( 25708) load[0m
+[0;32mI (163) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=a42e4h (672484) map[0m
+[0;32mI (393) esp_image: segment 5: paddr=000e430c vaddr=4008646c size=16250h ( 90704) load[0m
+[0;32mI (442) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (442) boot: Disabling RNG early entropy source...[0m
+[0;32mI (453) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (454) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (454) esp_psram: Speed: 40MHz[0m
+[0;32mI (454) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (460) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (468) cpu_start: Multicore app[0m
+[0;32mI (1376) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1385) cpu_start: Pro cpu start user code[0m
+[0;32mI (1385) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1385) app_init: Application information:[0m
+[0;32mI (1385) app_init: Project name:     esp32-cam-web[0m
+[0;32mI (1389) app_init: App version:      1[0m
+[0;32mI (1393) app_init: Compile time:     Jun 27 2025 18:17:55[0m
+[0;32mI (1398) app_init: ELF file SHA256:  63cac44ca...[0m
+[0;32mI (1402) app_init: ESP-IDF:          v6.0-dev-774-g68b583f30c[0m
+[0;32mI (1408) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1412) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1416) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1420) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1426) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1431) heap_init: At 3FFB9D58 len 000262A8 (152 KiB): DRAM[0m
+[0;32mI (1437) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1442) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1448) heap_init: At 4009C6BC len 00003944 (14 KiB): IRAM[0m
+[0;32mI (1454) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1461) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (1473) spi_flash: detected chip: generic[0m
+[0;32mI (1477) spi_flash: flash io: dio[0m
+[0;33mW (1480) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1493) main_task: Started on CPU0[0m
+[0;32mI (1503) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1503) main_task: Calling app_main()[0m
+[0;32mI (1503) cam_hal: cam init ok[0m
+[0;32mI (1503) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1503) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1543) camera: Detected camera at address=0x30[0m
+[0;32mI (1543) camera: Detected OV2640 camera[0m
+[0;32mI (1543) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1613) esp32 ll_cam: node_size: 2560, nodes_per_line: 1, lines_per_node: 1, dma_half_buffer_min:  2560, dma_half_buffer: 15360,lines_per_half_buffer:  6, dma_buffer_size: 30720, image_size: 153600[0m
+[0;32mI (1623) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 2560, node_cnt: 12, total_cnt: 10[0m
+[0;32mI (1633) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1643) cam_hal: cam config ok[0m
+[0;32mI (1643) ov2640: Set PLL: clk_2x: 0, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1763) wifi:wifi driver task: 3ffc2988, prio:23, stack:6656, core=0[0m
+[0;32mI (1773) wifi:wifi firmware version: 2dcd4f5[0m
+[0;32mI (1773) wifi:wifi certification version: v7.0[0m
+[0;32mI (1773) wifi:config NVS flash: enabled[0m
+[0;32mI (1773) wifi:config nano formatting: disabled[0m
+[0;32mI (1773) wifi:Init data frame dynamic rx bufcam_hal: EV-EOF-OVF[0m
+fer num: 32
+[0;32mI (1783) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1793) wifi:Init management short buffer num: 32[0m
+[0;32mI (1793) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1793) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1803) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1803) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1813) wifi_init: rx ba win: 6[0m
+[0;32mI (1813) wifi_init: accept mbox: 6[0m
+[0;32mI (1813) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1823) wifi_init: udp mbox: 6[0m
+[0;32mI (1823) wifi_init: tcp mbox: 6[0m
+[0;32mI (1823) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1823) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1833) wifi_init: tcp mss: 1440[0m
+[0;32mI (1833) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1833) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1843) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (1923) wifi:mode : sta (ec:64:c9:5e:a4:88)[0m
+[0;32mI (1923) wifi:enable tsf[0m
+[0;32mI (1933) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1933) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1943) stream: Stream server started at http://<your_ip>/stream[0m
+[0;32mI (1943) main_task: Returned from app_main()[0m
+[0;32mI (1943) wifi:state: auth -> asscam_hal: EV-EOF-OVF[0m
+oc (0x0)
+[0;32mI (1953) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1983) wifi:<ba-add>idx:0 (ifx:0, 50:91:e3:bb:44:d0), tid:5, ssn:0, winSize:64[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (2073) wifi:connected with Pracownia, aid = 6, channel 9, BW20, bssid = 50:91:e3:bb:44:d0[0m
+[0;32mI (2073) wifi:security: WPA2-PSK, phy: bgn, rssi: -66[0m
+[0;32mI (2083) wifi:pm start, type: 1[0m
+
+[0;32mI (2083) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2143) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (9203) esp_netif_handlers: sta ip: 192.168.100.66, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (17303) wifi:<ba-add>idx:1 (ifx:0, 50:91:e3:bb:44:d0), tid:0, ssn:0, winSize:64[0m
+[0;33mW (17523) httpd_uri: httpd_uri: URI '/' not found[0m
+[0;33mW (17523) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;33mW (17713) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (17713) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (62113) stream: MJPG: 150KB 190ms (5.3fps)[0m
+[0;32mI (62373) stream: MJPG: 150KB 260ms (3.8fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (62693) stream: MJPG: 150KB 314ms (3.2fps)[0m
+[0;32mI (62953) stream: MJPG: 150KB 255ms (3.9fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (63313) stream: MJPG: 150KB 364ms (2.7fps)[0m
+[0;32mI (63553) stream: MJPG: 150KB 245ms (4.1fps)[0m
+[0;32mI (63793) stream: MJPG: 150KB 235ms (4.2fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (64123) stream: MJPG: 150KB 329ms (3.0fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (64603) stream: MJPG: 150KB 474ms (2.1fps)[0m
+[0;32mI (64863) stream: MJPG: 150KB 260ms (3.8fps)[0m
+[0;32mI (65073) stream: MJPG: 150KB 214ms (4.7fps)[0m
+[0;32mI (65323) stream: MJPG: 150KB 245ms (4.1fps)[0m
+[0;32mI (65563) stream: MJPG: 150KB 242ms (4.1fps)[0m
+[0;32mI (65793) stream: MJPG: 150KB 236ms (4.2fps)[0m
+[0;32mI (66033) stream: MJPG: 150KB 232ms (4.3fps)[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (66603) stream: MJPG: 150KB 571ms (1.7fps)[0m
+[0;32mI (66833) stream: MJPG: 150KB 231ms (4.3fps)[0m
+[0;32mI (67083) stream: MJPG: 150KB 245ms (4.1fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (67413) stream: MJPG: 150KB 335ms (3.0fps)[0m
+[0;32mI (67643) stream: MJPG: 150KB 229ms (4.4fps)[0m
+[0;32mI (67883) stream: MJPG: 150KB 233ms (4.3fps)[0m
+[0;32mI (68123) stream: MJPG: 150KB 245ms (4.1fps)[0m
+[0;32mI (68353) stream: MJPG: 150KB 232ms (4.3fps)[0m
+[0;32mI (68593) stream: MJPG: 150KB 233ms (4.3fps)[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (68993) stream: MJPG: 150KB 404ms (2.5fps)[0m
+[0;32mI (69243) stream: MJPG: 150KB 244ms (4.1fps)[0m
+[0;32mI (69573) stream: MJPG: 150KB 330ms (3.0fps)[0m
+[0;32mI (69843) stream: MJPG: 150KB 272ms (3.7fps)[0m
+[0;32mI (70133) stream: MJPG: 150KB 291ms (3.4fps)[0m
+[0;32mI (70373) stream: MJPG: 150KB 235ms (4.2fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (70683) stream: MJPG: 150KB 315ms (3.2fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (70993) stream: MJPG: 150KB 306ms (3.3fps)[0m
+[0;32mI (71243) stream: MJPG: 150KB 253ms (3.9fps)[0m
+[0;32mI (71493) stream: MJPG: 150KB 248ms (4.0fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (71803) stream: MJPG: 150KB 312ms (3.2fps)[0m
+[0;32mI (72033) stream: MJPG: 150KB 231ms (4.3fps)[0m
+[0;32mI (72273) stream: MJPG: 150KB 240ms (4.2fps)[0m
+[0;32mI (72523) stream: MJPG: 150KB 243ms (4.1fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (73003) stream: MJPG: 150KB 481ms (2.1fps)[0m
+[0;32mI (73243) stream: MJPG: 150KB 235ms (4.2fps)[0m
+[0;32mI (73473) stream: MJPG: 150KB 233ms (4.3fps)[0m
+[0;32mI (73713) stream: MJPG: 150KB 242ms (4.1fps)[0m
+[0;32mI (73953) stream: MJPG: 150KB 240ms (4.2fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (74273) stream: MJPG: 150KB 318ms (3.1fps)[0m
+[0;32mI (74513) stream: MJPG: 150KB 240ms (4.2fps)[0m
+[0;32mI (74753) stream: MJPG: 150KB 243ms (4.1fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (75113) stream: MJPG: 150KB 358ms (2.8fps)[0m
+[0;32mI (75463) stream: MJPG: 150KB 345ms (2.9fps)[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (75833) stream: MJPG: 150KB 376ms (2.7fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+[0;32mI (76303) stream: MJPG: 150KB 469ms (2.1fps)[0m
+[0;32mI (76623) stream: MJPG: 150KB 317ms (3.1fps)[0m
+[0;32mI (76943) stream: MJPG: 150KB 320ms (3.1fps)[0m
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (77483) stream: MJPG: 150KB 541ms (1.8fps)[0m
+[0;32mI (77713) stream: MJPG: 150KB 227ms (4.4fps)[0m
+[0;32mI (77953) stream: MJPG: 150KB 243ms (4.1fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (78363) stream: MJPG: 150KB 409ms (2.4fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (78763) stream: MJPG: 150KB 400ms (2.5fps)[0m
+[0;32mI (78993) stream: MJPG: 150KB 223ms (4.5fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (79483) stream: MJPG: 150KB 487ms (2.0fps)[0m
+[0;32mI (79713) stream: MJPG: 150KB 229ms (4.4fps)[0m
+[0;32mI (79963) stream: MJPG: 150KB 256ms (3.9fps)[0m
+[0;32mI (80193) stream: MJPG: 150KB 229ms (4.4fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-VSYNC-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (80753) stream: MJPG: 150KB 556ms (1.8fps)[0m
+[0;32mI (81003) stream: MJPG: 150KB 247ms (4.0fps)[0m
+[0;32mI (81233) stream: MJPG: 150KB 231ms (4.3fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (81633) stream: MJPG: 150KB 406ms (2.5fps)[0m
+[0;32mI (81893) stream: MJPG: 150KB 258ms (3.9fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (82353) stream: MJPG: 150KB 462ms (2.2fps)[0m
+cam_hal: EV-EOF-OVF
+cam_hal: EV-EOF-OVF
+[0;32mI (82753) stream: MJPG: 150KB 397ms (2.5fps)[0m
+[0;32mI (82983) stream: MJPG: 150KB 232ms (4.3fps)[0m
+[0;32mI (83233) stream: MJPG: 150KB 243ms (4.1fps)[0m
+[0;33mW (83423) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (83423) httpd_uri: httpd_uri: uri handler execution failed[0m
+cam_hal: EV-EOF-OVF
+[0;32mI (84203) stream: MJPG: 150KB 134ms (7.4fps)[0m
+[0;32mI (84443) stream: MJPG: 150KB 234ms (4.3fps)[0m
+[0;32mI (84683) stream: MJPG: 150KB 243ms (4.1fps)[0m
+[0;32mI (84933) stream: MJPG: 150KB 246ms (4.1fps)[0m
+[0;32mI (85153) stream: MJPG: 150KB 224ms (4.4fps)[0m
+[0;32mI (85403) stream: MJPG: 150KB 242ms (4.1fps)[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (85793) stream: MJPG: 150KB 397ms (2.5fps)[0m
+[0;32mI (86033) stream: MJPG: 150KB 232ms (4.3fps)[0m
+[0;32mI (86263) stream: MJPG: 150KB 238ms (4.2fps)[0m
+[0;32mI (86513) stream: MJPG: 150KB 243ms (4.1fps)[0m
+[0;32mI (86773) stream: MJPG: 150KB 258ms (3.9fps)[0m
+[0;33mW (86863) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (86863) httpd_uri: httpd_uri: uri handler execution failed[0m

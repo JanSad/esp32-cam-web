@@ -1,0 +1,2 @@
+source /home/janek/esp/esp32-cam-web/build/bootloader/gdbinit/symbols
+source /home/janek/esp/esp32-cam-web/build/bootloader/gdbinit/connect

@@ -1,0 +1,508 @@
+Command: /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/janek/esp/esp32-cam-web/build/esp32-cam-web.elf /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.elf -m '/home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/janek/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15876
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v6.0-dev-774-g68b583f30c 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Jun 27 2025 19:34:15[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26ee8h (159464) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=00036f10 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00036f38 vaddr=3ffb0000 size=053a4h ( 21412) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0003c2e4 vaddr=40080000 size=03d34h ( 15668) load[0m
+[0;32mI (151) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=b56f0h (743152) map[0m
+[0;32mI (363) esp_image: segment 5: paddr=000f5718 vaddr=40083d34 size=188ech (100588) load[0m
+[0;32mI (410) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (410) boot: Disabling RNG early entropy source...[0m
+[0;32mI (420) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (421) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (422) esp_psram: Speed: 40MHz[0m
+[0;32mI (422) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (428) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (436) cpu_start: Multicore app[0m
+[0;32mI (1343) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1351) cpu_start: Pro cpu start user code[0m
+[0;32mI (1351) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1351) app_init: Application information:[0m
+[0;32mI (1352) app_init: Project name:     esp32-cam-web[0m
+[0;32mI (1356) app_init: App version:      1[0m
+[0;32mI (1360) app_init: Compile time:     Jun 27 2025 19:34:08[0m
+[0;32mI (1365) app_init: ELF file SHA256:  11559ca29...[0m
+[0;32mI (1369) app_init: ESP-IDF:          v6.0-dev-774-g68b583f30c[0m
+[0;32mI (1375) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1379) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1383) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (1387) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1393) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1398) heap_init: At 3FFBA348 len 00025CB8 (151 KiB): DRAM[0m
+[0;32mI (1403) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1409) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1415) heap_init: At 4009C620 len 000039E0 (14 KiB): IRAM[0m
+[0;32mI (1420) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;33mW (1427) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (1440) spi_flash: detected chip: generic[0m
+[0;32mI (1443) spi_flash: flash io: dio[0m
+[0;32mI (1447) main_task: Started on CPU0[0m
+[0;32mI (1457) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1457) main_task: Calling app_main()[0m
+[0;32mI (1487) wifi:wifi driver task: 3ffc237c, prio:23, stack:6656, core=0[0m
+[0;32mI (1487) wifi:wifi firmware version: 2dcd4f5[0m
+[0;32mI (1487) wifi:wifi certification version: v7.0[0m
+[0;32mI (1487) wifi:config NVS flash: enabled[0m
+[0;32mI (1497) wifi:config nano formatting: disabled[0m
+[0;32mI (1497) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1497) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1507) wifi:Init management short buffer num: 32[0m
+[0;32mI (1507) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1517) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1517) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1527) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1527) wifi_init: rx ba win: 6[0m
+[0;32mI (1527) wifi_init: accept mbox: 6[0m
+[0;32mI (1537) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1537) wifi_init: udp mbox: 6[0m
+[0;32mI (1537) wifi_init: tcp mbox: 6[0m
+[0;32mI (1537) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1547) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1547) wifi_init: tcp mss: 1440[0m
+[0;32mI (1547) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1557) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1557) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (1627) wifi:mode : sta (ec:64:c9:5e:a4:88)[0m
+[0;32mI (1627) wifi:enable tsf[0m
+[0;32mI (1627) cam_hal: cam init ok[0m
+[0;32mI (1627) sccb-ng: pin_sda 26 pin_scl 27[0m
+[0;32mI (1627) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1637) wifi:new:<9,0>, old:<1,0>, ap:<255,255>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1637) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1647) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1657) camera: Detected camera at address=0x30[0m
+[0;32mI (1657) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1657) camera: Detected OV2640 camera[0m
+[0;32mI (1657) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1687) wifi:<ba-add>idx:0 (ifx:0, 50:91:e3:bb:44:d0), tid:5, ssn:0, winSize:64[0m
+[0;32mI (1737) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 3[0m
+[0;32mI (1737) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (1737) cam_hal: cam config ok[0m
+[0;32mI (1737) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1777) wifi:connected with Pracownia, aid = 6, channel 9, BW20, bssid = 50:91:e3:bb:44:d0[0m
+[0;32mI (1777) wifi:security: WPA2-PSK, phy: bgn, rssi: -64[0m
+[0;32mI (1777) wifi:pm start, type: 1[0m
+
+[0;32mI (1777) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1787) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1827) main_task: Returned from app_main()[0m
+[1;31mE (1867) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1867) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1867) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (1877) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1977) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1977) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1977) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (1977) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2087) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2087) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2087) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2087) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2197) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2197) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2197) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2197) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2307) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2307) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2307) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2307) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2417) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2417) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2417) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2417) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2527) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2527) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2527) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2527) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2637) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2637) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2637) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2637) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2747) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2747) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2747) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2857) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2857) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2857) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2857) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (2967) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2967) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2967) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (2967) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3077) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3077) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3077) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3077) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3187) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3187) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3187) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3187) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3297) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3297) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3297) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3297) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3407) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3407) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3407) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3407) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3517) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3517) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3517) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3517) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3627) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3627) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3627) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3627) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3737) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3737) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3737) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3737) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3847) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3847) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3847) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3847) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (3957) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (3957) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (3957) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (3957) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4067) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4067) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4067) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4067) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4177) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4177) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4177) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4177) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4287) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4287) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4287) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4287) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4397) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4397) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4397) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4397) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4507) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4507) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4507) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4507) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4617) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4617) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4617) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4617) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4727) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4727) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4727) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4727) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4837) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4837) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4837) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4837) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (4947) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (4947) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (4947) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (4947) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5057) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5057) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5057) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5057) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5167) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5167) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5167) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5167) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5277) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5277) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5277) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5277) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5387) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5387) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5387) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5387) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5497) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5497) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5497) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5497) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5607) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5607) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5607) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5607) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5717) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5717) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5717) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5717) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5827) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5827) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5827) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5827) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (5937) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (5937) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (5937) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (5937) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6047) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6047) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6047) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6047) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6157) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6157) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6157) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6157) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6267) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6267) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6267) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6267) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6377) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6377) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6377) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6377) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6487) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6487) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6487) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6487) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6597) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6597) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6597) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6597) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6707) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6707) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6707) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6707) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6817) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6817) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6817) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6817) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (6927) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (6927) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (6927) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (6927) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7037) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7037) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7037) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7037) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7147) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7147) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7147) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7147) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7257) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7257) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7257) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7257) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7367) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7367) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7367) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7367) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7477) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7477) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7477) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7477) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7587) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7587) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7587) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7587) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7697) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7697) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7697) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7697) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7807) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7807) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7807) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7807) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (7917) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (7917) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (7917) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (7917) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8027) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8027) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8027) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8027) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8137) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8137) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8137) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8137) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8247) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8247) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8247) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8247) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8357) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8357) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8357) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8357) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8467) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8467) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8467) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8467) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8577) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8577) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8577) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8577) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8687) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8687) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8687) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8687) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8797) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8797) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8797) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8797) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8907) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (8907) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (8907) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (8907) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9017) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9017) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9017) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9017) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9127) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9127) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9127) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9127) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9237) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9237) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9237) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9237) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9347) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9347) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9347) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9347) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9457) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9457) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9457) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9457) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9567) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9567) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9567) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9567) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9677) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9677) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9677) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9677) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9787) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9787) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9787) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9787) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9897) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (9897) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (9897) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (9897) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10007) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10007) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10007) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10007) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10117) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10117) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10117) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10117) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10227) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10227) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10227) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10227) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10337) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10337) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10337) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10337) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10447) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10447) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10447) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10447) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10557) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10557) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10557) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10557) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10667) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10667) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10667) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10667) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10777) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10777) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10777) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10777) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10887) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10887) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10887) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10887) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (10997) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10997) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10997) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (10997) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11107) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11107) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11107) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11107) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11217) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11217) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11217) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11217) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11327) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11327) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11327) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11327) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11437) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11437) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11437) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11437) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11547) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11547) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11547) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11547) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11657) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11657) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11657) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11657) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11767) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11767) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11767) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11767) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11877) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11877) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11877) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11877) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (11987) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (11987) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (11987) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (11987) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12097) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12097) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12097) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12097) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12207) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12207) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12207) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12207) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12317) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12317) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12317) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12317) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12427) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12427) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12427) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12427) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12537) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12537) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12537) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12537) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (12647) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (12647) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (12647) HTTP_CLIENT: Connection failed, sock < 0[0m
+[1;31mE (12647) CAM: Send error: ESP_ERR_HTTP_CONNECT[0m

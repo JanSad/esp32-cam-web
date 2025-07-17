@@ -1,0 +1,52 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/janek/esp/esp32-cam-web/build/bootloader/esp-idf/esptool_py && /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32-cam-web.c.obj
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:182:9: warning: "CAM_PIN_PWDN" redefined
+  182 | #define CAM_PIN_PWDN 32
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:159:9: note: this is the location of the previous definition
+  159 | #define CAM_PIN_PWDN -1  //power down is not used
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:184:9: warning: "CAM_PIN_XCLK" redefined
+  184 | #define CAM_PIN_XCLK 0
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:161:9: note: this is the location of the previous definition
+  161 | #define CAM_PIN_XCLK 21
+      |         ^~~~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:192:9: warning: "CAM_PIN_D3" redefined
+  192 | #define CAM_PIN_D3 21
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:169:9: note: this is the location of the previous definition
+  169 | #define CAM_PIN_D3 19
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:193:9: warning: "CAM_PIN_D2" redefined
+  193 | #define CAM_PIN_D2 19
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:170:9: note: this is the location of the previous definition
+  170 | #define CAM_PIN_D2 18
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:194:9: warning: "CAM_PIN_D1" redefined
+  194 | #define CAM_PIN_D1 18
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:171:9: note: this is the location of the previous definition
+  171 | #define CAM_PIN_D1 5
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:195:9: warning: "CAM_PIN_D0" redefined
+  195 | #define CAM_PIN_D0 5
+      |         ^~~~~~~~~~
+/home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:172:9: note: this is the location of the previous definition
+  172 | #define CAM_PIN_D0 4
+      |         ^~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+[5/7] Linking CXX executable esp32-cam-web.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/janek/esp/esp32-cam-web/build/esp32-cam-web.bin
+[7/7] cd /home/janek/esp/esp32-cam-web/build/esp-idf/esptool_py && /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/janek/esp/esp32-cam-web/build/partition_table/partition-table.bin /home/janek/esp/esp32-cam-web/build/esp32-cam-web.bin
+esp32-cam-web.bin binary size 0xea580 bytes. Smallest app partition is 0x100000 bytes. 0x15a80 bytes (8%) free.

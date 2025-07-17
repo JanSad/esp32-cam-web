@@ -1,0 +1,84 @@
+Command: /home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python /home/janek/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB1 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/janek/esp/esp32-cam-web/build/esp32-cam-web.elf /home/janek/esp/esp32-cam-web/build/bootloader/bootloader.elf -m '/home/janek/.espressif/python_env/idf6.0_py3.10_env/bin/python' '/home/janek/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB1'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB1 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/janek/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/janek/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081c34: panic_abort at /home/janek/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x40089779: esp_system_abort at /home/janek/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008fe21: __assert_func at /home/janek/esp/esp-idf/components/newlib/src/assert.c:80
+--- 0x400ee6f7: tcpip_send_msg_wait_sem at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454
+--- 0x400fa8ae: netconn_apimsg at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400fa94e: netconn_new_with_proto_and_callback at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400ee549: lwip_socket at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759
+--- 0x400ea5b3: socket at /home/janek/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+---  (inlined by) httpd_server_init at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:357
+--- 0x400eac0c: httpd_start at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:524
+--- 0x400dbbee: start_stream_server at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:111
+--- 0x400dbc3b: app_main at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:251
+--- 0x40110b64: main_task at /home/janek/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4008a23d: vPortTaskWrapper at /home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/janek/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/janek/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081c34: panic_abort at /home/janek/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x40089779: esp_system_abort at /home/janek/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008fe21: __assert_func at /home/janek/esp/esp-idf/components/newlib/src/assert.c:80
+--- 0x400ee6f7: tcpip_send_msg_wait_sem at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454
+--- 0x400fa8ae: netconn_apimsg at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400fa94e: netconn_new_with_proto_and_callback at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400ee549: lwip_socket at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759
+--- 0x400ea5b3: socket at /home/janek/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+---  (inlined by) httpd_server_init at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:357
+--- 0x400eac0c: httpd_start at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:524
+--- 0x400dbbee: start_stream_server at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:111
+--- 0x400dbc3b: app_main at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:251
+--- 0x40110b64: main_task at /home/janek/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4008a23d: vPortTaskWrapper at /home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/janek/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/janek/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081c34: panic_abort at /home/janek/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x40089779: esp_system_abort at /home/janek/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008fe21: __assert_func at /home/janek/esp/esp-idf/components/newlib/src/assert.c:80
+--- 0x400ee6f7: tcpip_send_msg_wait_sem at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454
+--- 0x400fa8ae: netconn_apimsg at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400fa94e: netconn_new_with_proto_and_callback at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400ee549: lwip_socket at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759
+--- 0x400ea5b3: socket at /home/janek/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+---  (inlined by) httpd_server_init at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:357
+--- 0x400eac0c: httpd_start at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:524
+--- 0x400dbbee: start_stream_server at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:111
+--- 0x400dbc3b: app_main at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:251
+--- 0x40110b64: main_task at /home/janek/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4008a23d: vPortTaskWrapper at /home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/janek/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/janek/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0;33m--- 0x40081c34: panic_abort at /home/janek/esp/esp-idf/components/esp_system/panic.c:469
+--- 0x40089779: esp_system_abort at /home/janek/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4008fe21: __assert_func at /home/janek/esp/esp-idf/components/newlib/src/assert.c:80
+--- 0x400ee6f7: tcpip_send_msg_wait_sem at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:454
+--- 0x400fa8ae: netconn_apimsg at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+--- 0x400fa94e: netconn_new_with_proto_and_callback at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+--- 0x400ee549: lwip_socket at /home/janek/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1759
+--- 0x400ea5b3: socket at /home/janek/esp/esp-idf/components/lwip/include/lwip/sockets.h:70
+---  (inlined by) httpd_server_init at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:357
+--- 0x400eac0c: httpd_start at /home/janek/esp/esp-idf/components/esp_http_server/src/httpd_main.c:524
+--- 0x400dbbee: start_stream_server at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:111
+--- 0x400dbc3b: app_main at /home/janek/esp/esp32-cam-web/main/esp32-cam-web.c:251
+--- 0x40110b64: main_task at /home/janek/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4008a23d: vPortTaskWrapper at /home/janek/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _invalid_pc_placeholder at /home/janek/esp/esp-idf/components/xtensa/xtensa_vectors.S:2235
+[0m
+[0;33m--- 0x40080638: call_start_cpu0 at /home/janek/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m
